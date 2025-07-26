@@ -43,6 +43,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
+             <li class="nav-item">
+              <a class="nav-link" href="porto2.html">Portfolio 2</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -131,7 +134,6 @@
             <div class="card project-tile">
               <img src="img/keychronv7custommechanicalkeyboard-1670491631271.jpg" class="card-img-top" alt="Project 4" />
               <div class="card-body">
-                <h5 class="card-title">Technical Documentation</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
             </div>
@@ -140,7 +142,6 @@
             <div class="card project-tile">
               <img src="img/RJ8iMDiQPGav5zhFnRVJA7.jpg" class="card-img-top" alt="Project 5" />
               <div class="card-body">
-                <h5 class="card-title">Technical Documentation</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
             </div>
@@ -217,11 +218,30 @@
       crossorigin="anonymous"
     ></script>
     <script>
+
       const scriptURL = 'https://script.google.com/macros/s/AKfycby8fbIPeQTXsF7QOVfgQlqNWXkloX8wt2nTrmaf4GnS403qNVfxXy7q-ygfWv5JSl82/exec';
       const form = document.forms['Database-Portfolio'];
       const btnKirim = document.querySelector('.btn-kirim');
       const btnLoading = document.querySelector('.btn-loading');
       const myAlert = document.querySelector('.my-alert');
+        form.addEventListener('submit', e => {
+    e.preventDefault()
+//tampilkan tombol loading hilangkan kirim
+    btnLoading.classList.toggle('d-none');
+    btnKirim.classList.toggle('d-none');
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        //tampilkan alert
+        myAlert.classList.toggle('d-none');
+        //reset formnya
+        form.reset();
+        console.log('Success!', response)})
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
       </script>
+
   </body>
 </html>
