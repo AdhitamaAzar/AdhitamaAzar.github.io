@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motif Batik Indonesia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="animated-bg">
+
+  <!-- NAVBAR -->
+  <nav class="fixed w-full glass-card z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex justify-between items-center h-24">
+        <div class="flex items-center space-x-3 float-animation">
+          <div class="w-12 h-12 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center shadow-lg">
+            <span class="text-black font-bold text-xl">B</span>
+          </div>
+          <h1 class="text-2xl lg:text-3xl font-bold gold-gradient-text">Batik Indonesia</h1>
+        </div>
+        <div class="hidden md:flex space-x-8 lg:space-x-12">
+          <a href="index.html" class="nav-item text-gray-300 hover:text-yellow-400 font-medium tracking-wide">Home</a>
+          <a href="tentang.html" class="nav-item text-gray-300 hover:text-yellow-400 font-medium tracking-wide">Tentang</a>
+          <a href="sejarah.html" class="nav-item text-gray-300 hover:text-yellow-400 font-medium tracking-wide">Sejarah</a>
+          <a href="galeri.html" class="nav-item text-gray-300 hover:text-yellow-400 font-medium tracking-wide">Galeri</a>
+          <a href="motif.html" class="nav-item text-yellow-400 font-medium tracking-wide">Motif</a>
+          <a href="kontak.html" class="nav-item text-gray-300 hover:text-yellow-400 font-medium tracking-wide">Kontak</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOTIF BATIK -->
+  <main class="pt-32 pb-20 max-w-7xl mx-auto px-6 lg:px-8 space-y-16">
+    <div class="text-center">
+      <h1 class="text-5xl lg:text-6xl font-bold gold-gradient-text mb-6">Motif Batik Indonesia</h1>
+      <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+        Setiap motif batik memiliki cerita, makna, dan filosofi yang dalam. Klik pada salah satu motif untuk melihat detail lebih lengkap.
+      </p>
+    </div>
+
+    <!-- Grid Motif -->
+    <section class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Motif 1 -->
+      <div class="glass-card rounded-2xl overflow-hidden hover:scale-105 transition-transform cursor-pointer"
+           onclick="openModal('Parang','img/ChatGPT Image Sep 30, 2025, 10_33_08 AM.png',
+           'Motif Parang berbentuk garis diagonal seperti ombak yang tidak pernah putus. Motif ini awalnya hanya dipakai keluarga kerajaan karena dianggap sakral.',
+           'Melambangkan keteguhan, keberanian, dan semangat pantang menyerah dalam menghadapi rintangan.')">
+        <img src="img/motif-batik-parang-tuding-f2cd7f9f2cc21ff8862c43d96f4ca6a0.jpg" class="w-full h-60 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold gold-gradient-text mb-2">Parang</h3>
+          <p class="text-gray-400 text-sm">Motif diagonal yang ikonik dan penuh makna keberanian.</p>
+        </div>
+      </div>
+
+      <!-- Motif 2 -->
+      <div class="glass-card rounded-2xl overflow-hidden hover:scale-105 transition-transform cursor-pointer"
+           onclick="openModal('Kawung','img/ChatGPT Image Sep 30, 2025, 10_44_25 AM.png',
+           'Motif Kawung berbentuk lingkaran seperti irisan buah aren yang ditata simetris. Motif ini sudah ada sejak abad ke-13.',
+           'Melambangkan kesucian hati, keadilan, dan harapan kesejahteraan.')">
+        <img src="img/unnamed.jpg" class="w-full h-60 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold gold-gradient-text mb-2">Kawung</h3>
+          <p class="text-gray-400 text-sm">Motif klasik berbentuk lingkaran, penuh makna keseimbangan.</p>
+        </div>
+      </div>
+
+      <!-- Motif 3 -->
+      <div class="glass-card rounded-2xl overflow-hidden hover:scale-105 transition-transform cursor-pointer"
+           onclick="openModal('Mega Mendung','img/ChatGPT Image Sep 30, 2025, 10_53_03 AM.png',
+           'Motif Mega Mendung berasal dari Cirebon, berbentuk awan bergelombang yang biasanya berwarna biru, merah, atau abu-abu.',
+           'Melambangkan keteduhan, kesabaran, dan kebesaran jiwa.')">
+        <img src="img/R.jpg" class="w-full h-60 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold gold-gradient-text mb-2">Mega Mendung</h3>
+          <p class="text-gray-400 text-sm">Motif awan dari Cirebon, simbol keteduhan hati.</p>
+        </div>
+      </div>
+
+      <!-- Motif 4 -->
+      <div class="glass-card rounded-2xl overflow-hidden hover:scale-105 transition-transform cursor-pointer"
+           onclick="openModal('Sekar Jagad','img/ChatGPT Image Sep 30, 2025, 09_18_49 AM.png',
+           'Motif Sekar Jagad berbentuk seperti peta dunia dengan pola berwarna-warni. Nama Sekar Jagad berarti bunga dunia.',
+           'Melambangkan keindahan, keragaman, dan keharmonisan kehidupan.')">
+        <img src="img/Batik-Sekar-Jagad-Warna-Klasik-_-Sumber_-Freepik.jpg" class="w-full h-60 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold gold-gradient-text mb-2">Sekar Jagad</h3>
+          <p class="text-gray-400 text-sm">Motif peta dunia yang melambangkan keberagaman.</p>
+        </div>
+      </div>
+
+      <!-- Motif 5 -->
+      <div class="glass-card rounded-2xl overflow-hidden hover:scale-105 transition-transform cursor-pointer"
+           onclick="openModal('Truntum','img/ChatGPT Image Sep 30, 2025, 10_15_42 AM.png',
+           'Motif Truntum berbentuk bintang kecil yang diciptakan oleh Permaisuri Sunan Pakubuwono III sebagai simbol cinta yang tumbuh kembali.',
+           'Melambangkan cinta yang abadi dan ketulusan. Sering dipakai oleh orang tua pengantin di pernikahan.')">
+        <img src="img/054823500_1487067551-batik_truntum.jpg" class="w-full h-60 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold gold-gradient-text mb-2">Truntum</h3>
+          <p class="text-gray-400 text-sm">Motif penuh bintang, simbol cinta yang tumbuh kembali.</p>
+        </div>
+      </div>
+
+      <!-- Motif 6 -->
+      <div class="glass-card rounded-2xl overflow-hidden hover:scale-105 transition-transform cursor-pointer"
+           onclick="openModal('Lereng','img/ChatGPT Image Sep 30, 2025, 11_01_24 AM.png',
+           'Motif Lereng berbentuk garis diagonal berulang. Dulu digunakan oleh prajurit kerajaan sebagai simbol kesiapan perang.',
+           'Melambangkan keteraturan, kerja keras, dan kestabilan hidup.')">
+        <img src="img/OIP.webp" class="w-full h-60 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold gold-gradient-text mb-2">Lereng</h3>
+          <p class="text-gray-400 text-sm">Motif diagonal berulang, simbol keteraturan hidup.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL -->
+  <div id="motifModal" class="hidden fixed inset-0 bg-black/70 flex items-center justify-center z-50">
+    <div class="glass-card max-w-4xl w-full mx-4 rounded-3xl overflow-hidden relative">
+      <button onclick="closeModal()" class="absolute top-4 right-4 w-10 h-10 rounded-full glass-card flex items-center justify-center text-2xl text-yellow-400 hover:bg-yellow-400 hover:text-black transition-all">
+        ✕
+      </button>
+      <div class="grid lg:grid-cols-2">
+        <div class="bg-black">
+          <img id="modalImage" src="" alt="" class="w-full h-full object-cover">
+        </div>
+        <div class="p-8 space-y-6">
+          <h2 id="modalTitle" class="text-3xl font-bold gold-gradient-text"></h2>
+          <p id="modalDescription" class="text-gray-300"></p>
+          <p id="modalPhilosophy" class="text-yellow-400 italic"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="relative overflow-hidden py-16 border-t border-yellow-500/20">
+    <div class="absolute inset-0 bg-gradient-to-t from-black via-zinc-900 to-black"></div>
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+      <div class="text-center">
+        <div class="flex items-center justify-center space-x-3 mb-6 float-animation">
+          <div class="w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center shadow-xl">
+            <span class="text-black font-bold text-2xl">B</span>
+          </div>
+          <h3 class="text-4xl font-bold gold-gradient-text">Batik Indonesia</h3>
+        </div>
+        <p class="text-gray-400 mb-8 text-lg">Melestarikan Warisan Budaya Nusantara</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function openModal(title, image, description, philosophy) {
+      document.getElementById("modalTitle").innerText = title;
+      document.getElementById("modalImage").src = image;
+      document.getElementById("modalDescription").innerText = description;
+      document.getElementById("modalPhilosophy").innerText = philosophy;
+      document.getElementById("motifModal").classList.remove("hidden");
+    }
+
+    function closeModal() {
+      document.getElementById("motifModal").classList.add("hidden");
+    }
+  </script>
+
+</body>
+</html>

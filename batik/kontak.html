@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - Batik Indonesia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="animated-bg">
+
+  <!-- NAVBAR -->
+  <nav class="fixed w-full glass-card z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex justify-between items-center h-24">
+        <div class="flex items-center space-x-3 float-animation">
+          <div class="w-12 h-12 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center shadow-lg">
+            <span class="text-black font-bold text-xl">B</span>
+          </div>
+          <h1 class="text-2xl lg:text-3xl font-bold gold-gradient-text">Batik Indonesia</h1>
+        </div>
+        <div class="hidden md:flex space-x-8 lg:space-x-12">
+          <a href="index.html" class="nav-item text-gray-300 hover:text-yellow-400 font-medium tracking-wide">Home</a>
+          <a href="tentang.html" class="nav-item text-gray-300 hover:text-yellow-400 font-medium tracking-wide">Tentang</a>
+          <a href="sejarah.html" class="nav-item text-gray-300 hover:text-yellow-400 font-medium tracking-wide">Sejarah</a>
+          <a href="galeri.html" class="nav-item text-gray-300 hover:text-yellow-400 font-medium tracking-wide">Galeri</a>
+          <a href="motif.html" class="nav-item text-gray-300 hover:text-yellow-400 font-medium tracking-wide">Motif</a>
+          <a href="kontak.html" class="nav-item text-yellow-400 font-medium tracking-wide">Kontak</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- KONTAK SECTION -->
+  <main class="pt-32 pb-20 max-w-7xl mx-auto px-6 lg:px-8 space-y-16">
+    <div class="text-center">
+      <h1 class="text-5xl lg:text-6xl font-bold gold-gradient-text mb-6">Kontak Kami</h1>
+      <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+        Berikut adalah lokasi SMKN 5 Malang beserta informasi kontak dan link menuju website resmi sekolah.
+      </p>
+    </div>
+
+    <!-- Konten -->
+    <section class="glass-card rounded-2xl p-10 grid lg:grid-cols-2 gap-12">
+      <!-- MAP -->
+      <iframe class="w-full h-96 rounded-2xl shadow-xl"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7903.342039515509!2d112.63321307634834!3d-7.92938699209441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd629f1b8a28299%3A0xa995c6171f4fe894!2sSMK%20Negeri%205%20Kota%20Malang!5e0!3m2!1sen!2sus!4v1758937060794!5m2!1sen!2sus"
+        style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <!-- Info Kontak -->
+      <div class="space-y-8">
+        <h2 class="text-3xl font-bold gold-gradient-text">Hubungi Kami</h2>
+        <p class="text-gray-300 leading-relaxed">
+          Untuk informasi lebih lanjut mengenai sekolah, program pendidikan, dan layanan yang kami sediakan,
+          silakan hubungi kami melalui kontak berikut:
+        </p>
+
+        <div class="space-y-6">
+          <div class="flex items-start space-x-4">
+            <div class="text-yellow-400 text-2xl">📞</div>
+            <div>
+              <p class="text-gray-200 font-semibold">Telepon</p>
+              <p class="text-gray-400">0341-478195</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="text-yellow-400 text-2xl">📧</div>
+            <div>
+              <p class="text-gray-200 font-semibold">Email</p>
+              <p class="text-gray-400">info@smkn5malang.sch.id</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="text-yellow-400 text-2xl">📍</div>
+            <div>
+              <p class="text-gray-200 font-semibold">Alamat</p>
+              <p class="text-gray-400">Jl. Terusan Ikan Piranha Atas No.50, Tunjungsekar, Lowokwaru, Kota Malang, Jawa Timur 65142</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="relative overflow-hidden py-16 border-t border-yellow-500/20">
+    <div class="absolute inset-0 bg-gradient-to-t from-black via-zinc-900 to-black"></div>
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+      <div class="text-center">
+        <div class="flex items-center justify-center space-x-3 mb-6 float-animation">
+          <div class="w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center shadow-xl">
+            <span class="text-black font-bold text-2xl">B</span>
+          </div>
+          <h3 class="text-4xl font-bold gold-gradient-text">Batik Indonesia</h3>
+        </div>
+        <p class="text-gray-400 mb-8 text-lg">Melestarikan Warisan Budaya Nusantara</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
