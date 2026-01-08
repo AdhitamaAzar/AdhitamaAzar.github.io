@@ -1,261 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous"
-    />
-
-   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-
-    
-    <link rel="stylesheet" href="style.css" />
-
-    <title>My Portfolio | Adhitama azar w.z</title>
-  </head>
-  <body id="home">
-    
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top" id="navbar">
-      <div class="container">
-        <a class="navbar-brand" href="#">Adhitama Azar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-             <li class="nav-item">
-              <a class="nav-link" href="porto2.html">Portfolio 2</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="batik/">Batik </a>
-            </li>
-          </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="#" style="--i:1"class="active">Home</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#services" style="--i:3">Skills</a> <!-- perbaiki 'Skill' menjadi 'Skills' -->
+            <a href="#skills" style="--i:4">Portfolio</a> <!-- perbaiki 'Portofolio' menjadi 'Portfolio' -->
+            <a href="#contact" style="--i:5">Contact</a>
+        </nav>
+    </header>
+    <section class="home"> <!-- perbaiki 'Home' menjadi 'home' -->
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Adhitama Azar</h1>
+            <h3>And I am a <span class="text"></span></h3>
+            <p>I am a Software engineering student</p> <!-- perbaiki teks ke bahasa Inggris -->
+            <div class="home-sci">
+                <a href="https://www.instagram.com/adhittttttp/" style="--i:7"><i class='bx bxl-instagram'></i></box-icon></a>
+                <a style="--i:8"><i class='bx bxl-whatsapp'></i></box-icon></a>
+                <a style="--i:9"><i class='bx bxl-tiktok'></i></box-icon></a>
+                <a href="https://www.linkedin.com/in/riski-kurniawan-01966232a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYk4%2BioJgT2WAz9MgLwlulQ%3D%3D" style="--i:10"><i class='bx bxl-linkedin' ></i></box-icon></a>
+            </div>
+            <a href="#contact" class="btn-box">More About Me</a>
         </div>
-      </div>
-    </nav>
-
-   
-    <section class="jumbotron text-center" id="welcome-section">
-      <img src="img/2. ADHITAMA AZAR WICAKSONO ZEIN.JPG" alt="" width="200" class="rounded-circle img-thumbnail" />
-      <h1 class="display-4">Adhitama azar </h1>
-      <p class="lead">Student | Programmer </p>
-      <a href="https://github.com/AdhitamaAzar" target="_blank" class="btn btn-dark btn-github" id="profile-link">Follow my GitHub <i class="bi bi-github"></i></a>
-      <svg class="wave1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="10"
-          d="M0,64L48,80C96,96,192,128,288,128C384,128,480,96,576,80C672,64,768,64,864,96C960,128,1056,192,1152,186.7C1248,181,1344,107,1392,69.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
+        <span class="home-imgHover"></span>
+            <div class="home-photo">
+        <img src="img/WhatsApp Image 2026-01-08 at 11.29.46.jpg" alt="Profile">
+        </div>
     </section>
-    
-
-    
-    <section id="about">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>About Me</h2>
-          </div>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/WhatsApp Image 2026-01-08 at 11.29.46.jpg">
         </div>
-        <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
-            <p>I am a student in Vocational Highschool  5 Malang. I am a second grader and now learning to be Programmer</p>
-          </div>
-          <div class="col-md-4">
-            <p>At first grade I learn HTML,CSS,JS,PHP. In second grade I will learn flutter, dart, python</p>
-          </div>
+        <div class="about-text">
+            <h2>About<span>Me</span></h2>
+            <h4>Adhitama Azar</h4>
+            <p>I am a Software Engineering Student and i'am 17 years old with a deep passion for information technology. I am fascinated by how technology is changing our lives and committed to being part of that change. I have expertise in electronics and programming, as well as experience as a Network Technician. In addition, I am also an active frontend and web developer, mastering HTML, CSS, and JavaScript, as well as frameworks like React. I enjoy creating responsive and engaging websites, combining functionality with aesthetic design. In addition, I have an interest in graphic design, where I express my creativity. I believe that technology and art can synergize to create amazing experiences. I look forward to contributing to impactful projects and continuing to learn in this field.</p>
+            <a href="#contact" class="btn-box">More About Me</a>
         </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#e2edff"
-          fill-opacity="10"
-          d="M0,96L48,122.7C96,149,192,203,288,192C384,181,480,107,576,80C672,53,768,75,864,101.3C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
     </section>
-  
-
- 
-    <section id="projects">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>My Projects</h2>
-          </div>
+    <section>
+        <div class="services" id="services">
+            <div class="container">
+                <h1 class="sub-title">My <span>services</span></h1>
+                <div class="services-list">
+                    <div>
+                        <i class='bx bx-code' style='color:#00eeff'  ></i>
+                        <h2>UI/UX Design</h2>
+                        <p>I provide professional UI/UX design services focused on intuitive, aesthetic and functional user interfaces. I ensure designs that are visually appealing and effective in achieving your business goals for websites, mobile applications, and other digital platforms.</p>
+                        <a href="#contact" class="read">Contact me</a>
+                    </div>
+                    
+    
+                    <div>
+                        <i class='bx bx-crop' style='color:#00eeff'  ></i>
+                        <h2>Graphic Design</h2>
+                        <p>I provide creative graphic design services that will bring your ideas to life into stunning visual masterpieces. I ensure each design is not only aesthetic, but also effective in conveying a message, I am ready to help you build a strong and memorable visual identity.</p>
+                        <a href="#contact" class="read">Contact me</a>
+                    </div>
+                    <div>
+                        <i class='bx bxl-visual-studio' style='color:#00eeff'></i>
+                        <h2>Frontend Dev</h2>
+                        <p>I offer frontend development services that focus on creating attractive and responsive user interfaces. With expertise in HTML, CSS, and JavaScript, I'm committed to ensuring that every project not only looks great but also functions well across a variety of devices and browsers.</p>
+                        <a href="#contact" class="read">Contact me</a>
+                    </div>
+                </div>
+                
+            </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
-            <div class="card project-tile">
-              <img src="img/2d098093b9227083895153491b3fca6b.jpg" class="card-img-top" alt="Project 1" />
-              <div class="card-body">
-                <h5 class="card-title"></h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
+    </section> 
+    <h1 class="sub-title">My <span>Skills</span></h1>
+    <section>
+      
+        <div class="container1" id="skills">
+                <h1 class="heading1">Technical Skills</h1>
+            <div class="Technical-bars">
+            
+                <div class="bar"><i style="color: #c95d2e" class='bx bxl-html5'></i>
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-line html">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i style="color: #147bbc" class='bx bxl-css3'></i>
+                    <div class="info">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-line css">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i style="color: #b0bc1e" class='bx bxl-javascript'></i>
+                    <div class="info">
+                        <span>Javascript</span>
+                    </div>
+                    <div class="progress-line javascript">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i style="color: #c322c9" class='bx bxl-python'></i>
+                    <div class="info">
+                        <span>Python</span>
+                    </div>
+                    <div class="progress-line python">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i style="color: #69bcbc" class='bx bxl-react'></i>
+                    <div class="info">
+                        <span>React</span>
+                    </div>
+                    <div class="progress-line react">
+                        <span></span>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card project-tile">
-              <img src="img/board2.jpg" class="card-img-top" alt="Project 2" />
-              <div class="card-body">
-                <h5 class="card-title"></h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card project-tile">
-              <img src="img/7f3760069fc7102867998d4526e05796.jpg" class="card-img-top" alt="Project 3" />
-              <div class="card-body">
-                <h5 class="card-title"></h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card project-tile">
-              <img src="img/keychronv7custommechanicalkeyboard-1670491631271.jpg" class="card-img-top" alt="Project 4" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card project-tile">
-              <img src="img/RJ8iMDiQPGav5zhFnRVJA7.jpg" class="card-img-top" alt="Project 5" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
+    
+    
+        <div class="container1">
+            <h1 class="heading1">Profesional Skills</h1>
+            <div class="radial-bars">
 
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="10"
-          d="M0,192L30,208C60,224,120,256,180,245.3C240,235,300,181,360,181.3C420,181,480,235,540,261.3C600,288,660,288,720,272C780,256,840,224,900,218.7C960,213,1020,235,1080,245.3C1140,256,1200,256,1260,250.7C1320,245,1380,235,1410,229.3L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-        ></path>
-      </svg>
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                        <div class="percentage">90%</div>
+                        <div class="text">creativity</div>
+                </div>
+                <div class="radial-bar">
+    
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+        
+                    </svg>
+                    <div class="percentage">80%</div>
+                    <div class="text">comunication</div>
+                </div>            
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">75%</div>
+                    <div class="text">problem solve</div>
+                </div>
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">85%</div>
+                    <div class="text">TeamWork</div>
+                </div>
+            </div>
+        </div>
     </section>
-    
+
 
     
-    <section id="contact">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Contact Me</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-              <strong>Terimakasih!</strong> Pesan anda sudah kami terima.
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <div id="portfolio" id="project">
+            <div class="main-text" id="project">
+             <h2>Latest <span>Project</span></h2>
+
+            <div class="portfolio-content">
+                <div class="row">
+                    <img src="https://img.freepik.com/free-vector/gradient-colored-ui-kit-collection_23-2149218855.jpg?semt=ais_hybrid">
+                    <div class="layer">
+                        <h5>UI/UX Design</h5>
+                        <p>Gambar ini adalah contoh proyek yang tren untuk saat ini, menggambarkan perpaduan antara teknologi modern dan estetika desain yang inovatif. dan fokus pada pengalaman pengguna yang lebih personal. menciptakan solusi yang tidak hanya fungsional tetapi juga menarik secara visual dan relevan dengan kebutuhan masa kini.</p>
+
+                        <a href="#contact"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="https://img.freepik.com/free-vector/ux-ui-design-landing-page_52683-866.jpg?ga=GA1.1.1056495612.1727086293&semt=ais_hybrid">
+                    <div class="layer">
+                        <h5>UI/UX Design</h5>
+                        <p>Gambar ini adalah contoh proyek yang tren untuk saat ini, menggambarkan perpaduan antara teknologi modern dan estetika desain yang inovatif. dan fokus pada pengalaman pengguna yang lebih personal. menciptakan solusi yang tidak hanya fungsional tetapi juga menarik secara visual dan relevan dengan kebutuhan masa kini.</p>
+                        
+                        <a href="#contact"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="https://img.freepik.com/free-vector/modern-infographic-element-collection_52683-1777.jpg?ga=GA1.1.1056495612.1727086293">
+                    <div class="layer">
+                        <h5>UI/UX Design</h5>
+                        <p>Gambar ini adalah contoh proyek yang tren untuk saat ini, menggambarkan perpaduan antara teknologi modern dan estetika desain yang inovatif. dan fokus pada pengalaman pengguna yang lebih personal. menciptakan solusi yang tidak hanya fungsional tetapi juga menarik secara visual dan relevan dengan kebutuhan masa kini.</p>
+                        
+                        <a href="#contact"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="https://img.freepik.com/free-vector/dashboard-user-panel-with-flat-design_23-2147888543.jpg?ga=GA1.1.1056495612.1727086293">
+                    <div class="layer">
+                        <h5>UI/UX Design</h5>
+                        <p>Gambar ini adalah contoh proyek yang tren untuk saat ini, menggambarkan perpaduan antara teknologi modern dan estetika desain yang inovatif. dan fokus pada pengalaman pengguna yang lebih personal. menciptakan solusi yang tidak hanya fungsional tetapi juga menarik secara visual dan relevan dengan kebutuhan masa kini.</p>
+                        
+                        <a href="#contact"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="https://img.freepik.com/premium-photo/business-cards-templates-flyers-customizable-designs-professional-branding_1191871-29336.jpg?semt=ais_hybrid">
+                    <div class="layer">
+                        <h5>UI/UX Design</h5>
+                        <p>Gambar ini adalah contoh proyek yang tren untuk saat ini, menggambarkan perpaduan antara teknologi modern dan estetika desain yang inovatif. dan fokus pada pengalaman pengguna yang lebih personal. menciptakan solusi yang tidak hanya fungsional tetapi juga menarik secara visual dan relevan dengan kebutuhan masa kini.</p>
+                        
+                        <a href="#contact"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="https://img.freepik.com/free-vector/gradient-dashboard-statistic-evolution-template_23-2148284171.jpg?ga=GA1.1.1056495612.1727086293">
+                    <div class="layer">
+                        <h5>UI/UX Design</h5>
+                        <p>Gambar ini adalah contoh proyek yang tren untuk saat ini, menggambarkan perpaduan antara teknologi modern dan estetika desain yang inovatif. dan fokus pada pengalaman pengguna yang lebih personal. menciptakan solusi yang tidak hanya fungsional tetapi juga menarik secara visual dan relevan dengan kebutuhan masa kini.</p>
+                        
+                        <a href="#contact"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                    </div>
+                </div>
+               
+                
             </div>
-            <form name="Database-Portfolio">
-              <div class="mb-3">
-                <label for="name" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="nama" aria-describedby="name" name="nama" />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
-              </div>
-              <div class="mb-3">
-                <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+        </div>
+    
 
-              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
-                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                Loading...
-              </button>
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact <span>Me</span></h2>
+            <h4>Lets work together</h4>
+            <p>I'm glad you've visited my personal portfolio website! If you have any questions, suggestions, or would like to collaborate, please feel free to contact me through this form. I will endeavor to reply to your message as soon as possible.</p>
+            <ul class="contact-list">
+                <li><i class="bx bxs-send"></i> Adhitamzar@gmail.com</li>
+                <li><i class="bx bxs-phone"></i> 081515842845</li>
+            </ul>
+            <div class="contact-icons">
+                <a href="https://www.instagram.com/adhittttttp/"><i class="bx bxl-instagram"></i></a>
+                <a><i class="bx bxl-whatsapp"></i></a>
+                <a><i class="bx bxl-tiktok"></i></a>
+                <a href="https://www.linkedin.com/in/riski-kurniawan-01966232a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYk4%2BioJgT2WAz9MgLwlulQ%3D%3D"><i class="bx bxl-linkedin"></i></a>
+            </div>
+        </div>
+    
+        <div class="contact-form">
+            <form action="">
+                <input type="text" placeholder="Enter Your Name" required>
+                <input type="email" placeholder="Enter Your Email" required>
+                <input type="text" placeholder="Enter Your Subject">
+                <textarea placeholder="Enter Your Message" required></textarea>
+                <input type="submit" value="Submit" class="send">
             </form>
-          </div>
         </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#0d6efd"
-          fill-opacity="10"
-          d="M0,128L30,149.3C60,171,120,213,180,224C240,235,300,213,360,192C420,171,480,149,540,160C600,171,660,213,720,197.3C780,181,840,107,900,101.3C960,96,1020,160,1080,197.3C1140,235,1200,245,1260,234.7C1320,224,1380,192,1410,176L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-        ></path>
-      </svg>
     </section>
+    <div class="last-text">
+        <p>developed with Adhitama Azar</p>
+    </div>
+    <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
     
-
     
-    <footer class="bg-primary text-white text-center pb-5">
-      <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="" class="text-white fw-bold">Adhitama Azar</a></p>
-    </footer>
     
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-<<<<<<< HEAD
-
-=======
->>>>>>> 888645ee4023257b3a21fcd5667ec55926b5ea73
-      const scriptURL = 'https://script.google.com/macros/s/AKfycby8fbIPeQTXsF7QOVfgQlqNWXkloX8wt2nTrmaf4GnS403qNVfxXy7q-ygfWv5JSl82/exec';
-      const form = document.forms['Database-Portfolio'];
-      const btnKirim = document.querySelector('.btn-kirim');
-      const btnLoading = document.querySelector('.btn-loading');
-      const myAlert = document.querySelector('.my-alert');
-<<<<<<< HEAD
-        form.addEventListener('submit', e => {
-=======
-       form.addEventListener('submit', e => {
->>>>>>> 888645ee4023257b3a21fcd5667ec55926b5ea73
-    e.preventDefault()
-//tampilkan tombol loading hilangkan kirim
-    btnLoading.classList.toggle('d-none');
-    btnKirim.classList.toggle('d-none');
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        btnLoading.classList.toggle('d-none');
-        btnKirim.classList.toggle('d-none');
-        //tampilkan alert
-        myAlert.classList.toggle('d-none');
-        //reset formnya
-        form.reset();
-        console.log('Success!', response)})
-      .catch(error => console.error('Error!', error.message))
-  })
-<<<<<<< HEAD
-</script>
-      </script>
-
-=======
-    </script>
->>>>>>> 888645ee4023257b3a21fcd5667ec55926b5ea73
-  </body>
-</html>
+    
+        <script src="main.js"></script>
+    </body>
+    </html>
