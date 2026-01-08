@@ -382,7 +382,11 @@ section{
 
 /* Progress untuk React */
 .Technical-bars .bar .progress-line.react span {
+<<<<<<< HEAD
     width: 25%;
+=======
+    width: 75%;
+>>>>>>> 659bc9c (ganti template)
 }
 
 .Technical-bars .bar .progress-line span::after{
@@ -410,7 +414,11 @@ section{
     content: "50%";
 }
 .Technical-bars .bar .progress-line.react span::after{
+<<<<<<< HEAD
     content: "25%";
+=======
+    content: "75%";
+>>>>>>> 659bc9c (ganti template)
 }
 .Technical-bars .bar .progress-line span::before{
     content: "";
@@ -541,7 +549,11 @@ section{
 }
 @keyframes animate-path2{
     100%{
+<<<<<<< HEAD
         stroke-dashoffset: 110;;
+=======
+        stroke-dashoffset: 100;;
+>>>>>>> 659bc9c (ganti template)
     }
 }
 @keyframes animate-path3{
