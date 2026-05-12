@@ -363,50 +363,6 @@
     <a href="#" class="back-to-top" id="backToTop"><i class='bx bx-up-arrow-alt'></i></a>
 
     <!-- ===== SCRIPTS ===== -->
-    <script>
-        // Typed.js
-        const typed = new Typed('.typed-text', {
-            strings: ['Frontend Developer', 'UI/UX Designer', 'Graphic Designer', 'Network Technician'],
-            typeSpeed: 80,
-            backSpeed: 50,
-            backDelay: 1500,
-            loop: true
-        });
-
-        // Hamburger Menu
-        const hamburger = document.getElementById('hamburger');
-        const navbar = document.getElementById('navbar');
-        hamburger.addEventListener('click', () => {
-            navbar.classList.toggle('open');
-            hamburger.classList.toggle('toggle');
-        });
-        // Close menu on link click
-        document.querySelectorAll('.navbar a').forEach(link => {
-            link.addEventListener('click', () => {
-                navbar.classList.remove('open');
-                hamburger.classList.remove('toggle');
-            });
-        });
-
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.getElementById('header');
-            header.classList.toggle('scrolled', window.scrollY > 50);
-            // Back to top button
-            const backToTop = document.getElementById('backToTop');
-            backToTop.classList.toggle('visible', window.scrollY > 600);
-        });
-
-        // Smooth scroll for anchor links (same page)
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                const target = document.querySelector(this.getAttribute('href'));
-                if(target) {
-                    e.preventDefault();
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>

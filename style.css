@@ -1,270 +1,569 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-</head>
-<body>
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-        <nav class="navbar">
-            <a href="#" style="--i:1"class="active">Home</a>
-            <a href="#about" style="--i:2">About</a>
-            <a href="#services" style="--i:3">Skills</a> <!-- perbaiki 'Skill' menjadi 'Skills' -->
-            <a href="#skills" style="--i:4">Portfolio</a> <!-- perbaiki 'Portofolio' menjadi 'Portfolio' -->
-            <a href="#contact" style="--i:5">Contact</a>
-        </nav>
-    </header>
-    <section class="home"> <!-- perbaiki 'Home' menjadi 'home' -->
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Adhitama Azar</h1>
-            <h3>And I am a <span class="text"></span></h3>
-            <p>I am a Software engineering student</p> <!-- perbaiki teks ke bahasa Inggris -->
-            <div class="home-sci">
-                <a href="https://www.instagram.com/adhittttttp/" style="--i:7"><i class='bx bxl-instagram'></i></box-icon></a>
-                <a style="--i:8"><i class='bx bxl-whatsapp'></i></box-icon></a>
-                <a style="--i:9"><i class='bx bxl-tiktok'></i></box-icon></a>
-                <a href="https://www.linkedin.com/in/adhitama-azar-zein-458528352/" style="--i:10"><i class='bx bxl-linkedin' ></i></box-icon></a>
-            </div>
-            <a href="#contact" class="btn-box">More About Me</a>
-        </div>
-        <span class="home-imgHover"></span>
-            <div class="home-photo">
-        <img src="img/WhatsApp Image 2026-01-08 at 11.29.46.jpg" alt="Profile">
-        </div>
-    </section>
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="">
-        </div>
-        <div class="about-text">
-            <h2>About<span>Me</span></h2>
-            <h4>Adhitama Azar</h4>
-            <p>I am a Software Engineering Student and i'am 17 years old with a deep passion for information technology. I am fascinated by how technology is changing our lives and committed to being part of that change. I have expertise in electronics and programming, as well as experience as a Network Technician. In addition, I am also an active frontend and web developer, mastering HTML, CSS, and JavaScript, as well as frameworks like React. I enjoy creating responsive and engaging websites, combining functionality with aesthetic design. In addition, I have an interest in graphic design, where I express my creativity. I believe that technology and art can synergize to create amazing experiences. I look forward to contributing to impactful projects and continuing to learn in this field.</p>
-            <a href="#contact" class="btn-box">More About Me</a>
-        </div>
-    </section>
-    <section>
-        <div class="services" id="services">
-            <div class="container">
-                <h1 class="sub-title">My <span>services</span></h1>
-                <div class="services-list">
-                    <div>
-                        <i class='bx bx-code' style='color:#00eeff'  ></i>
-                        <h2>UI/UX Design</h2>
-                        <p>I provide professional UI/UX design services focused on intuitive, aesthetic and functional user interfaces. I ensure designs that are visually appealing and effective in achieving your business goals for websites, mobile applications, and other digital platforms.</p>
-                        <a href="#contact" class="read">Contact me</a>
-                    </div>
-                    
-    
-                    <div>
-                        <i class='bx bx-crop' style='color:#00eeff'  ></i>
-                        <h2>Graphic Design</h2>
-                        <p>I provide creative graphic design services that will bring your ideas to life into stunning visual masterpieces. I ensure each design is not only aesthetic, but also effective in conveying a message, I am ready to help you build a strong and memorable visual identity.</p>
-                        <a href="#contact" class="read">Contact me</a>
-                    </div>
-                    <div>
-                        <i class='bx bxl-visual-studio' style='color:#00eeff'></i>
-                        <h2>Frontend Dev</h2>
-                        <p>I offer frontend development services that focus on creating attractive and responsive user interfaces. With expertise in HTML, CSS, and JavaScript, I'm committed to ensuring that every project not only looks great but also functions well across a variety of devices and browsers.</p>
-                        <a href="#contact" class="read">Contact me</a>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section> 
-    <h1 class="sub-title">My <span>Skills</span></h1>
-    <section>
-      
-        <div class="container1" id="skills">
-                <h1 class="heading1">Technical Skills</h1>
-            <div class="Technical-bars">
-            
-                <div class="bar"><i style="color: #c95d2e" class='bx bxl-html5'></i>
-                    <div class="info">
-                        <span>HTML</span>
-                    </div>
-                    <div class="progress-line html">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><i style="color: #147bbc" class='bx bxl-css3'></i>
-                    <div class="info">
-                        <span>CSS</span>
-                    </div>
-                    <div class="progress-line css">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><i style="color: #b0bc1e" class='bx bxl-javascript'></i>
-                    <div class="info">
-                        <span>Javascript</span>
-                    </div>
-                    <div class="progress-line javascript">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><i style="color: #c322c9" class='bx bxl-python'></i>
-                    <div class="info">
-                        <span>Python</span>
-                    </div>
-                    <div class="progress-line python">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><i style="color: #69bcbc" class='bx bxl-react'></i>
-                    <div class="info">
-                        <span>React</span>
-                    </div>
-                    <div class="progress-line react">
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-    
-        <div class="container1">
-            <h1 class="heading1">Profesional Skills</h1>
-            <div class="radial-bars">
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                        <div class="percentage">90%</div>
-                        <div class="text">creativity</div>
-                </div>
-                <div class="radial-bar">
-    
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-        
-                    </svg>
-                    <div class="percentage">70%</div>
-                    <div class="text">comunication</div>
-                </div>            
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-3" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">75%</div>
-                    <div class="text">problem solve</div>
-                </div>
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-4" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">85%</div>
-                    <div class="text">TeamWork</div>
-                </div>
-            </div>
-        </div>
-    </section>
+:root {
+  --bg: #09090b;
+  --bg2: #0f0f13;
+  --bg3: #16161d;
+  --glass: rgba(255,255,255,0.03);
+  --glass-border: rgba(255,255,255,0.06);
+  --coral: #ff6b6b;
+  --orange: #ffa500;
+  --yellow: #feca57;
+  --grad: linear-gradient(135deg, #ff6b6b, #ffa500);
+  --grad2: linear-gradient(135deg, #ffa500, #feca57);
+  --text: #f1f1f1;
+  --text-muted: #9b9b9b;
+  --radius: 18px;
+  --transition: 0.3s cubic-bezier(0.4,0,0.2,1);
+}
 
+body {
+  font-family: 'Outfit', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
 
-    
-        <div id="portfolio" id="project">
-            <div class="main-text" id="project">
-             <h2>Latest <span>Project</span></h2>
+/* ===== PARTICLES (grid halus) ===== */
+.particles {
+  position: fixed; inset: 0;
+  pointer-events: none; z-index: 0;
+  background-image:
+    linear-gradient(rgba(255,107,107,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,107,107,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, black 30%, transparent 70%);
+}
 
-            <div class="portfolio-content">
-                <div class="row">
-                    <img src="img/batik.png">
-                    <div class="layer">
-                        <h5>Web batik</h5>
-                        <p>
-                        <a href="https://adhitamaazar.github.io/batik/"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <img src="img/porto2.png">
-                    <div class="layer">
-                        <h5>Porto2</h5>
-                        <p></p>
-                        
-                        <a href="porto2.html"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <img src="img/Databuku.png">
-                    <div class="layer">
-                        <h5>Laravel projek</h5>
-                        <p>Sebuah tugas projek</p>
-                        
-                        <a href=""><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <img src="img/kaggle web.png">
-                    <div class="layer">
-                        <h5>kaggle web</h5>
-                        <p></p>
-                        
-                        <a href="http://103.186.167.18:8002/rpl2/laravel/kaggleAdhitama_2/"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <img src="https://img.freepik.com/premium-photo/business-cards-templates-flyers-customizable-designs-professional-branding_1191871-29336.jpg?semt=ais_hybrid">
-                    <div class="layer">
-                        <h5>UI/UX Design</h5>
-                        <p>Gambar ini adalah contoh proyek yang tren untuk saat ini, menggambarkan perpaduan antara teknologi modern dan estetika desain yang inovatif. dan fokus pada pengalaman pengguna yang lebih personal. menciptakan solusi yang tidak hanya fungsional tetapi juga menarik secara visual dan relevan dengan kebutuhan masa kini.</p>
-                        
-                        <a href="#contact"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
-                    </div>
-                </div>
-                
-               
-                
-            </div>
-        </div>
-    
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--grad); border-radius: 10px; }
 
-    <section class="contact" id="contact">
-        <div class="contact-text">
-            <h2>Contact <span>Me</span></h2>
-            <h4>Lets work together</h4>
-            <p>I'm glad you've visited my personal portfolio website! If you have any questions, suggestions, or would like to collaborate, please feel free to contact me through this form. I will endeavor to reply to your message as soon as possible.</p>
-            <ul class="contact-list">
-                <li><i class="bx bxs-send"></i> Adhitamzar@gmail.com</li>
-                <li><i class="bx bxs-phone"></i> 081515842845</li>
-            </ul>
-            <div class="contact-icons">
-                <a href="https://www.instagram.com/adhittttttp/"><i class="bx bxl-instagram"></i></a>
-                <a><i class="bx bxl-whatsapp"></i></a>
-                <a><i class="bx bxl-tiktok"></i></a>
-                <a href="https://www.linkedin.com/in/adhitama-azar-zein-458528352/"><i class="bx bxl-linkedin"></i></a>
-            </div>
-        </div>
-    
-        <div class="contact-form">
-            <form action="">
-                <input type="text" placeholder="Enter Your Name" required>
-                <input type="email" placeholder="Enter Your Email" required>
-                <input type="text" placeholder="Enter Your Subject">
-                <textarea placeholder="Enter Your Message" required></textarea>
-                <input type="submit" value="Submit" class="send">
-            </form>
-        </div>
-    </section>
-    <div class="last-text">
-        <p>developed with Adhitama Azar</p>
-    </div>
-    <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
-    
-    
-    
-    
-        <script src="main.js"></script>
-    </body>
-    </html>
+/* ===== HEADER ===== */
+.header {
+  position: fixed; top: 0; left: 0; width: 100%;
+  padding: 18px 8%;
+  display: flex; align-items: center; justify-content: space-between;
+  z-index: 1000;
+  backdrop-filter: blur(20px);
+  background: rgba(9,9,11,0.8);
+  border-bottom: 1px solid transparent;
+  transition: var(--transition);
+}
+.header.scrolled {
+  border-bottom-color: var(--glass-border);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.logo {
+  font-size: 22px; font-weight: 700;
+  text-decoration: none; color: var(--text);
+  letter-spacing: 1px;
+  display: flex; align-items: center; gap: 6px;
+}
+.logo i { color: var(--coral); font-size: 24px; }
+.logo-bracket { background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+.navbar { display: flex; gap: 36px; }
+.navbar a {
+  font-size: 15px; font-weight: 500; color: var(--text-muted);
+  text-decoration: none; position: relative; transition: var(--transition);
+}
+.navbar a::after {
+  content: ''; position: absolute; bottom: -4px; left: 0;
+  width: 0; height: 2px;
+  background: var(--grad); border-radius: 2px;
+  transition: width var(--transition);
+}
+.navbar a:hover, .navbar a.active { color: var(--text); }
+.navbar a:hover::after, .navbar a.active::after { width: 100%; }
+
+.hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; z-index: 1001; }
+.hamburger span { display: block; width: 24px; height: 2px; background: var(--text); border-radius: 2px; transition: var(--transition); }
+
+/* ===== SECTION COMMONS ===== */
+section { position: relative; padding: 100px 8%; z-index: 1; }
+
+.section-header { text-align: center; margin-bottom: 64px; }
+.section-tag {
+  display: inline-block; font-size: 13px; font-weight: 600;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: var(--coral); background: rgba(255,107,107,0.1);
+  border: 1px solid rgba(255,107,107,0.2);
+  padding: 6px 18px; border-radius: 100px; margin-bottom: 16px;
+}
+.section-title { font-size: clamp(32px, 5vw, 52px); font-weight: 700; line-height: 1.2; }
+.gradient-text { background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+/* ===== BUTTONS ===== */
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 14px 32px; border-radius: 100px;
+  background: var(--grad); color: #fff;
+  font-size: 15px; font-weight: 600; text-decoration: none;
+  border: none; cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 8px 32px rgba(255,107,107,0.35);
+}
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(255,165,0,0.5); }
+
+.btn-outline {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 13px 32px; border-radius: 100px;
+  background: transparent; color: var(--text);
+  font-size: 15px; font-weight: 600; text-decoration: none;
+  border: 1.5px solid var(--glass-border);
+  transition: var(--transition);
+}
+.btn-outline:hover { border-color: var(--coral); color: var(--coral); transform: translateY(-2px); }
+
+.btn-full { width: 100%; justify-content: center; }
+
+/* ===== HERO (teks di kanan, foto di kiri) ===== */
+.home {
+  min-height: 100vh;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 60px; padding-top: 120px;
+  flex-direction: row-reverse; /* foto kiri, teks kanan */
+}
+
+.home-content { flex: 1; max-width: 560px; }
+
+.greeting-badge {
+  display: inline-block; font-size: 14px; font-weight: 500;
+  color: var(--text-muted); background: var(--glass);
+  border: 1px solid var(--glass-border); border-radius: 100px;
+  padding: 8px 20px; margin-bottom: 24px;
+}
+
+.home-content h1 {
+  font-size: clamp(36px, 5vw, 60px); font-weight: 800;
+  line-height: 1.15; margin-bottom: 16px;
+}
+.home-content h2 {
+  font-size: clamp(20px, 3vw, 28px); font-weight: 500;
+  color: var(--text-muted); margin-bottom: 24px;
+}
+.home-content h2 .typed-text { color: var(--coral); font-weight: 600; }
+.home-content p { font-size: 16px; color: var(--text-muted); margin-bottom: 36px; max-width: 480px; }
+
+.home-cta { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 40px; }
+
+.home-sci { display: flex; gap: 12px; }
+.home-sci a {
+  width: 42px; height: 42px; border-radius: 50%;
+  background: var(--glass); border: 1px solid var(--glass-border);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text-muted); font-size: 18px; text-decoration: none;
+  transition: var(--transition);
+}
+.home-sci a:hover { background: var(--grad); border-color: transparent; color: #fff; transform: translateY(-3px); }
+
+/* HOME IMAGE */
+.home-image { flex: 0 0 auto; position: relative; }
+.image-wrapper {
+  position: relative; width: 360px; height: 360px;
+}
+.image-wrapper img {
+  width: 100%; height: 100%; object-fit: cover;
+  border-radius: 50%; position: relative; z-index: 2;
+  border: 3px solid rgba(255,107,107,0.3);
+}
+.glow-ring {
+  position: absolute; inset: -14px; border-radius: 50%;
+  background: conic-gradient(from 0deg, #ff6b6b, #ffa500, #feca57, #ff6b6b);
+  animation: spin 8s linear infinite; z-index: 1;
+  mask: radial-gradient(farthest-side, transparent calc(100% - 4px), white calc(100% - 3px));
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 4px), white calc(100% - 3px));
+  filter: blur(8px);
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.floating-badge {
+  position: absolute; background: rgba(9,9,11,0.9);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(12px);
+  border-radius: 100px; padding: 8px 16px;
+  font-size: 13px; font-weight: 600; color: var(--text);
+  display: flex; align-items: center; gap: 8px; z-index: 3;
+  animation: float 3s ease-in-out infinite;
+}
+.badge-1 { top: 10%; left: -30px; animation-delay: 0s; }
+.badge-2 { bottom: 20%; right: -30px; animation-delay: 1s; }
+.badge-3 { bottom: 5%; left: 0; animation-delay: 2s; }
+.floating-badge i { font-size: 16px; color: var(--coral); }
+@keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+
+.scroll-indicator {
+  position: absolute; bottom: 32px; left: 50%;
+  transform: translateX(-50%); display: flex; flex-direction: column;
+  align-items: center; text-decoration: none;
+}
+.scroll-dot {
+  width: 24px; height: 40px; border: 2px solid var(--glass-border);
+  border-radius: 100px; position: relative;
+}
+.scroll-dot::after {
+  content: ''; position: absolute;
+  top: 6px; left: 50%; transform: translateX(-50%);
+  width: 4px; height: 8px; background: var(--coral);
+  border-radius: 2px;
+  animation: scrollDown 1.5s ease-in-out infinite;
+}
+@keyframes scrollDown { 0% { top: 6px; opacity: 1; } 100% { top: 22px; opacity: 0; } }
+
+/* ===== ABOUT ===== */
+.about { background: var(--bg2); }
+.about-container {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 80px; align-items: center;
+}
+.about-img-wrapper { position: relative; }
+.about-img-bg {
+  position: absolute; inset: 20px 20px -20px -20px;
+  border-radius: var(--radius);
+  background: var(--grad); opacity: 0.1; z-index: 0;
+  filter: blur(20px);
+}
+.about-img {
+  width: 100%; border-radius: var(--radius);
+  position: relative; z-index: 1;
+  border: 1px solid var(--glass-border);
+  object-fit: cover; max-height: 480px;
+}
+.about-stats {
+  position: absolute; bottom: -24px; left: 50%; transform: translateX(-50%);
+  display: flex; gap: 12px; z-index: 2;
+  background: rgba(9,9,11,0.9); backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border); border-radius: var(--radius);
+  padding: 16px 24px;
+}
+.stat-card { text-align: center; padding: 0 16px; }
+.stat-card:not(:last-child) { border-right: 1px solid var(--glass-border); }
+.stat-number { display: block; font-size: 24px; font-weight: 700; background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.stat-label { font-size: 12px; color: var(--text-muted); }
+
+.about-text h3 { font-size: 28px; font-weight: 700; line-height: 1.4; margin-bottom: 20px; }
+.about-text p { color: var(--text-muted); font-size: 15px; margin-bottom: 16px; line-height: 1.8; }
+
+.about-info-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 16px; margin: 28px 0 36px;
+}
+.info-item {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 14px; color: var(--text-muted);
+}
+.info-item i { color: var(--coral); font-size: 18px; flex-shrink: 0; }
+
+/* ===== SERVICES ===== */
+.services-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.service-card {
+  background: var(--glass); border: 1px solid var(--glass-border);
+  border-radius: var(--radius); padding: 40px 32px;
+  position: relative; overflow: hidden;
+  transition: var(--transition);
+}
+.service-card::before {
+  content: ''; position: absolute; inset: 0;
+  background: var(--grad); opacity: 0;
+  transition: var(--transition); z-index: 0;
+}
+.service-card:hover { transform: translateY(-8px); border-color: rgba(255,107,107,0.3); box-shadow: 0 20px 40px rgba(255,107,107,0.1); }
+.service-card:hover::before { opacity: 0.04; }
+.service-card > * { position: relative; z-index: 1; }
+
+.service-card.featured {
+  border-color: rgba(255,165,0,0.4);
+  background: linear-gradient(135deg, rgba(255,107,107,0.08), rgba(255,165,0,0.04));
+}
+.featured-badge {
+  display: inline-block; font-size: 11px; font-weight: 700;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  background: var(--grad); color: #fff;
+  padding: 4px 14px; border-radius: 100px; margin-bottom: 20px;
+}
+.service-icon {
+  width: 56px; height: 56px; border-radius: 14px;
+  background: rgba(255,107,107,0.1); border: 1px solid rgba(255,107,107,0.2);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 26px; color: var(--coral); margin-bottom: 20px;
+}
+.service-card h3 { font-size: 20px; font-weight: 700; margin-bottom: 12px; }
+.service-card p { font-size: 14px; color: var(--text-muted); line-height: 1.8; margin-bottom: 24px; }
+.service-features { list-style: none; margin-bottom: 28px; display: flex; flex-direction: column; gap: 10px; }
+.service-features li { font-size: 13px; color: var(--text-muted); display: flex; align-items: center; gap: 8px; }
+.service-features li i { color: var(--coral); font-size: 16px; }
+.service-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 14px; font-weight: 600; color: var(--coral);
+  text-decoration: none; transition: gap 0.3s;
+}
+.service-link:hover { gap: 12px; }
+
+/* ===== SKILLS ===== */
+.skills-section { background: var(--bg2); }
+.skills-container {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+}
+.skills-container h3 { font-size: 20px; font-weight: 700; margin-bottom: 32px; }
+
+.skill-bars { display: flex; flex-direction: column; gap: 24px; }
+.skill-bar {}
+.skill-info { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.skill-name { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; }
+.skill-name i { font-size: 18px; color: var(--coral); }
+.skill-percent { font-size: 13px; color: var(--coral); font-weight: 700; }
+.skill-track {
+  height: 6px; background: rgba(255,255,255,0.05);
+  border-radius: 100px; overflow: hidden;
+}
+.skill-fill {
+  height: 100%; width: 0;
+  background: var(--grad); border-radius: 100px;
+  transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.radial-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.radial-item { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.radial-item span { font-size: 14px; font-weight: 600; color: var(--text-muted); }
+.radial-ring { position: relative; width: 110px; height: 110px; }
+.radial-ring svg { transform: rotate(-90deg); width: 110px; height: 110px; }
+.ring-bg { fill: none; stroke: rgba(255,255,255,0.05); stroke-width: 8; }
+.ring-fill {
+  fill: none; stroke: url(#skillGrad); stroke-width: 8;
+  stroke-linecap: round;
+  stroke-dasharray: 314; stroke-dashoffset: 314;
+  transition: stroke-dashoffset 1.5s cubic-bezier(0.4,0,0.2,1);
+}
+.radial-percent {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px; font-weight: 700;
+  background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+
+/* ===== PORTFOLIO ===== */
+.filter-btn:hover, .filter-btn.active {
+  background: var(--grad); border-color: transparent; color: #fff;
+}
+
+.portfolio-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.portfolio-card {
+  background: var(--glass); border: 1px solid var(--glass-border);
+  border-radius: var(--radius); overflow: hidden;
+  transition: var(--transition);
+}
+.portfolio-card.hidden { display: none; }
+.portfolio-card:hover { transform: translateY(-8px); border-color: rgba(255,107,107,0.3); box-shadow: 0 20px 40px rgba(255,107,107,0.15); }
+.portfolio-img { position: relative; overflow: hidden; aspect-ratio: 4/3; }
+.portfolio-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; display: block; }
+.portfolio-card:hover .portfolio-img img { transform: scale(1.08); }
+.portfolio-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(9,9,11,0.95) 0%, rgba(9,9,11,0.3) 60%, transparent 100%);
+  display: flex; align-items: flex-end;
+  padding: 24px;
+  opacity: 0; transition: var(--transition);
+}
+.portfolio-card:hover .portfolio-overlay { opacity: 1; }
+.portfolio-overlay-content { width: 100%; }
+.portfolio-tag {
+  font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--coral); display: block; margin-bottom: 8px;
+}
+.portfolio-title { font-weight: 700; font-size: 18px; margin-bottom: 4px; }
+.portfolio-desc { font-size: 13px; color: var(--text-muted); }
+
+/* ===== CONTACT ===== */
+.contact-wrapper {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+}
+.contact-form-wrapper {
+  background: var(--glass); border: 1px solid var(--glass-border);
+  border-radius: var(--radius); padding: 40px;
+}
+.contact-form-wrapper input,
+.contact-form-wrapper textarea {
+  width: 100%; padding: 14px 18px;
+  background: var(--bg3); border: 1px solid var(--glass-border);
+  border-radius: 12px; color: var(--text);
+  font-family: inherit; margin-bottom: 20px;
+  transition: var(--transition);
+}
+.contact-form-wrapper input:focus,
+.contact-form-wrapper textarea:focus {
+  outline: none; border-color: var(--coral);
+  box-shadow: 0 0 0 3px rgba(255,107,107,0.2);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: var(--bg2); border-top: 1px solid var(--glass-border);
+  padding: 40px 8%;
+}
+.footer-content {
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 16px;
+}
+.footer-logo { font-size: 20px; display: flex; align-items: center; gap: 6px; }
+.footer-logo i { color: var(--coral); }
+.footer-content p { font-size: 14px; color: var(--text-muted); }
+.footer-links { display: flex; gap: 28px; }
+.footer-links a { font-size: 14px; color: var(--text-muted); text-decoration: none; transition: var(--transition); }
+.footer-links a:hover { color: var(--coral); }
+
+/* ===== BACK TO TOP ===== */
+.back-to-top {
+  position: fixed; bottom: 32px; right: 32px; z-index: 999;
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--grad); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px; text-decoration: none;
+  box-shadow: 0 8px 24px rgba(255,107,107,0.4);
+  opacity: 0; pointer-events: none; transition: var(--transition);
+  transform: translateY(10px);
+}
+.back-to-top.visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+.back-to-top:hover { transform: translateY(-3px); }
+
+/* SVG Gradient Def (hidden) */
+body::before {
+  content: '';
+  position: absolute;
+  width: 0; height: 0; overflow: hidden;
+}
+
+/* ===== ANIMATIONS (dipertahankan untuk kompatibilitas) ===== */
+@keyframes showText {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes slideRight {
+  0% { transform: translateX(-100px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+@keyframes slideLeft {
+  0% { transform: translateX(100px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+@keyframes slideTop {
+  0% { transform: translateY(100px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+@keyframes slideBottom {
+  0% { transform: translateY(-100px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Jika ada elemen dengan class Technical-bars (opsional) */
+.Technical-bars .bar .progress-line span {
+  background: var(--grad);
+}
+.Technical-bars .bar .progress-line.react span { width: 75%; }
+.Technical-bars .bar .progress-line.python span { width: 50%; }
+.Technical-bars .bar .progress-line span::after {
+  position: absolute;
+  padding: 2px 8px;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 4px;
+  top: -24px;
+  right: -20px;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+
+/* Radial bars cadangan */
+.radial-bars .radial-bar {
+  width: 50%; height: 170px; margin-bottom: 10px; position: relative;
+}
+.radial-bars .radial-bar svg {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 120px; height: 160px;
+}
+.radial-bars .radial-bar .progress-bar,
+.radial-bars .radial-bar .path {
+  stroke-width: 10;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+}
+.radial-bars .radial-bar .progress-bar {
+  stroke: var(--coral);
+  animation: animate-bar 1s linear forwards;
+}
+@keyframes animate-bar {
+  100% { stroke-dashoffset: 50; }
+}
+.path-1 { animation: animate-path1 1s 1s linear forwards; }
+.path-2 { animation: animate-path2 1s 1s linear forwards; }
+.path-3 { animation: animate-path3 1s 1s linear forwards; }
+.path-4 { animation: animate-path4 1s 1s linear forwards; }
+@keyframes animate-path1 { 100% { stroke-dashoffset: 50; } }
+@keyframes animate-path2 { 100% { stroke-dashoffset: 100; } }
+@keyframes animate-path3 { 100% { stroke-dashoffset: 125; } }
+@keyframes animate-path4 { 100% { stroke-dashoffset: 75; } }
+.radial-bar .percentage {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 17px; font-weight: 500;
+  animation: showText 0.5s 1s linear forwards; opacity: 0;
+}
+.radial-bar .text {
+  width: 100%; position: absolute; text-align: center;
+  left: 50%; bottom: -5px;
+  transform: translateX(-50%);
+  font-size: 17px; font-weight: 500;
+  animation: showText 0.5s 1s linear forwards; opacity: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .services-grid { grid-template-columns: 1fr 1fr; }
+  .portfolio-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 768px) {
+  section { padding: 80px 5%; }
+  .header { padding: 16px 5%; }
+  .navbar { display: none; flex-direction: column; position: fixed; top: 0; right: 0; height: 100vh; width: 240px; background: rgba(9,9,11,0.98); backdrop-filter: blur(20px); padding: 80px 32px; gap: 28px; border-left: 1px solid var(--glass-border); transform: translateX(100%); transition: transform var(--transition); }
+  .navbar.open { display: flex; transform: translateX(0); }
+  .hamburger { display: flex; }
+  .home { flex-direction: column; text-align: center; padding-top: 100px; gap: 40px; }
+  .home-cta { justify-content: center; }
+  .home-sci { justify-content: center; }
+  .home-content p { margin-left: auto; margin-right: auto; }
+  .image-wrapper { width: 260px; height: 260px; margin: 0 auto; }
+  .badge-1, .badge-2, .badge-3 { display: none; }
+  .about-container { grid-template-columns: 1fr; gap: 60px; }
+  .about-stats { position: static; transform: none; margin-top: 20px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .skills-container { grid-template-columns: 1fr; }
+  .portfolio-grid { grid-template-columns: 1fr; }
+  .contact-wrapper { grid-template-columns: 1fr; }
+  .footer-content { flex-direction: column; text-align: center; }
+  .footer-links { justify-content: center; }
+  .about-info-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .home-content h1 { font-size: 32px; }
+  .section-title { font-size: 28px; }
+  .contact-form-wrapper { padding: 24px; }
+  .radial-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
+}
