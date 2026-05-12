@@ -1,11 +1,5 @@
-// ===== TYPED.JS =====
-const typed = new Typed('.typed-text', {
-    strings: ['Backend Developer', 'UI/UX Designer', 'Game Developer', 'Network Technician'],
-    typeSpeed: 80,
-    backSpeed: 50,
-    backDelay: 1500,
-    loop: true
-});
+// ===== TYPED.JS diinisialisasi di index.html (inline script) =====
+// Jangan inisialisasi ulang di sini agar tidak konflik
 
 // ===== MOBILE NAVIGATION =====
 const hamburger = document.getElementById('hamburger');
