@@ -3,268 +3,410 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Adhitama Azar — Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-        <nav class="navbar">
-            <a href="#" style="--i:1"class="active">Home</a>
-            <a href="#about" style="--i:2">About</a>
-            <a href="#services" style="--i:3">Skills</a> <!-- perbaiki 'Skill' menjadi 'Skills' -->
-            <a href="#skills" style="--i:4">Portfolio</a> <!-- perbaiki 'Portofolio' menjadi 'Portfolio' -->
-            <a href="#contact" style="--i:5">Contact</a>
+
+    <!-- SVG Gradient Definition for Radial Skills -->
+    <svg width="0" height="0" style="position:absolute">
+        <defs>
+            <linearGradient id="skillGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#ff6b6b" />
+                <stop offset="100%" stop-color="#ffa500" />
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <!-- Particles Background -->
+    <div class="particles"></div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+        <a href="#" class="logo"><i class='bx bx-code-alt'></i> Portfolio</a>
+        <button class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
-    <section class="home"> <!-- perbaiki 'Home' menjadi 'home' -->
+
+    <!-- ===== HERO ===== -->
+    <section class="home" id="home">
         <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Adhitama Azar</h1>
-            <h3>And I am a <span class="text"></span></h3>
-            <p>I am a Software engineering student</p> <!-- perbaiki teks ke bahasa Inggris -->
+            <div class="greeting-badge">👋 Hello, It's Me</div>
+            <h1>Adhitama <span class="gradient-text">Azar</span></h1>
+            <h2>And I'm a <span class="typed-text"></span></h2>
+            <p>I am a Software Engineering student with a passion for technology, design, and impactful digital experiences.</p>
+            <div class="home-cta">
+                <a href="#contact" class="btn-primary"><i class='bx bx-send'></i> Let's Talk</a>
+                <a href="#about" class="btn-outline"><i class='bx bx-user'></i> More About Me</a>
+            </div>
             <div class="home-sci">
-                <a href="https://www.instagram.com/adhittttttp/" style="--i:7"><i class='bx bxl-instagram'></i></box-icon></a>
-                <a style="--i:8"><i class='bx bxl-whatsapp'></i></box-icon></a>
-                <a style="--i:9"><i class='bx bxl-tiktok'></i></box-icon></a>
-                <a href="https://www.linkedin.com/in/adhitama-azar-zein-458528352/" style="--i:10"><i class='bx bxl-linkedin' ></i></box-icon></a>
+                <a href="https://www.instagram.com/adhittttttp/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                <a href="#"><i class='bx bxl-tiktok'></i></a>
+                <a href="https://www.linkedin.com/in/adhitama-azar-zein-458528352/" target="_blank"><i class='bx bxl-linkedin'></i></a>
             </div>
-            <a href="#contact" class="btn-box">More About Me</a>
         </div>
-        <span class="home-imgHover"></span>
-            <div class="home-photo">
-        <img src="img/WhatsApp Image 2026-01-08 at 11.29.46.jpg" alt="Profile">
+
+        <div class="home-image">
+            <div class="image-wrapper">
+                <img src="img/WhatsApp Image 2026-01-08 at 11.29.46.jpg" alt="Adhitama Azar">
+                <div class="glow-ring"></div>
+                <!-- Floating badges -->
+                <div class="floating-badge badge-1"><i class='bx bx-code-alt'></i> Frontend</div>
+                <div class="floating-badge badge-2"><i class='bx bx-paint'></i> Designer</div>
+                <div class="floating-badge badge-3"><i class='bx bx-network-chart'></i> Network</div>
+            </div>
         </div>
+
+        <a href="#about" class="scroll-indicator">
+            <div class="scroll-dot"></div>
+        </a>
     </section>
+
+    <!-- ===== ABOUT ===== -->
     <section class="about" id="about">
-        <div class="about-img">
-            <img src="">
+        <div class="section-header">
+            <span class="section-tag">About</span>
+            <h2 class="section-title">Turning <span class="gradient-text">Passion</span> into Code</h2>
         </div>
-        <div class="about-text">
-            <h2>About<span>Me</span></h2>
-            <h4>Adhitama Azar</h4>
-            <p>I am a Software Engineering Student and i'am 17 years old with a deep passion for information technology. I am fascinated by how technology is changing our lives and committed to being part of that change. I have expertise in electronics and programming, as well as experience as a Network Technician. In addition, I am also an active frontend and web developer, mastering HTML, CSS, and JavaScript, as well as frameworks like React. I enjoy creating responsive and engaging websites, combining functionality with aesthetic design. In addition, I have an interest in graphic design, where I express my creativity. I believe that technology and art can synergize to create amazing experiences. I look forward to contributing to impactful projects and continuing to learn in this field.</p>
-            <a href="#contact" class="btn-box">More About Me</a>
-        </div>
-    </section>
-    <section>
-        <div class="services" id="services">
-            <div class="container">
-                <h1 class="sub-title">My <span>services</span></h1>
-                <div class="services-list">
-                    <div>
-                        <i class='bx bx-code' style='color:#00eeff'  ></i>
-                        <h2>UI/UX Design</h2>
-                        <p>I provide professional UI/UX design services focused on intuitive, aesthetic and functional user interfaces. I ensure designs that are visually appealing and effective in achieving your business goals for websites, mobile applications, and other digital platforms.</p>
-                        <a href="#contact" class="read">Contact me</a>
+        <div class="about-container">
+            <div class="about-img-wrapper">
+                <div class="about-img-bg"></div>
+                <img src="img/WhatsApp Image 2026-01-08 at 11.29.46.jpg" alt="Adhitama" class="about-img">
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Years Coding</span>
                     </div>
-                    
-    
-                    <div>
-                        <i class='bx bx-crop' style='color:#00eeff'  ></i>
-                        <h2>Graphic Design</h2>
-                        <p>I provide creative graphic design services that will bring your ideas to life into stunning visual masterpieces. I ensure each design is not only aesthetic, but also effective in conveying a message, I am ready to help you build a strong and memorable visual identity.</p>
-                        <a href="#contact" class="read">Contact me</a>
+                    <div class="stat-card">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Projects</span>
                     </div>
-                    <div>
-                        <i class='bx bxl-visual-studio' style='color:#00eeff'></i>
-                        <h2>Frontend Dev</h2>
-                        <p>I offer frontend development services that focus on creating attractive and responsive user interfaces. With expertise in HTML, CSS, and JavaScript, I'm committed to ensuring that every project not only looks great but also functions well across a variety of devices and browsers.</p>
-                        <a href="#contact" class="read">Contact me</a>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section> 
-    <h1 class="sub-title">My <span>Skills</span></h1>
-    <section>
-      
-        <div class="container1" id="skills">
-                <h1 class="heading1">Technical Skills</h1>
-            <div class="Technical-bars">
-            
-                <div class="bar"><i style="color: #c95d2e" class='bx bxl-html5'></i>
-                    <div class="info">
-                        <span>HTML</span>
-                    </div>
-                    <div class="progress-line html">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><i style="color: #147bbc" class='bx bxl-css3'></i>
-                    <div class="info">
-                        <span>CSS</span>
-                    </div>
-                    <div class="progress-line css">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><i style="color: #b0bc1e" class='bx bxl-javascript'></i>
-                    <div class="info">
-                        <span>Javascript</span>
-                    </div>
-                    <div class="progress-line javascript">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><i style="color: #c322c9" class='bx bxl-python'></i>
-                    <div class="info">
-                        <span>Python</span>
-                    </div>
-                    <div class="progress-line python">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><i style="color: #69bcbc" class='bx bxl-react'></i>
-                    <div class="info">
-                        <span>React</span>
-                    </div>
-                    <div class="progress-line react">
-                        <span></span>
+                    <div class="stat-card">
+                        <span class="stat-number">17</span>
+                        <span class="stat-label">Years Young</span>
                     </div>
                 </div>
             </div>
-        </div>
-    
-    
-        <div class="container1">
-            <h1 class="heading1">Profesional Skills</h1>
-            <div class="radial-bars">
-
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                        <div class="percentage">90%</div>
-                        <div class="text">creativity</div>
+            <div class="about-text">
+                <h3>Adhitama <span class="gradient-text">Azar</span></h3>
+                <p>I am a 17‑year‑old Software Engineering student with a deep passion for information technology. I’m fascinated by how technology changes our lives and I’m committed to being part of that change.</p>
+                <p>I have expertise in electronics and programming, as well as experience as a Network Technician. I’m also an active frontend & web developer, mastering HTML, CSS, JavaScript, and frameworks like React. I enjoy creating responsive and engaging websites, combining functionality with aesthetic design.</p>
+                <div class="about-info-grid">
+                    <div class="info-item"><i class='bx bx-code-alt'></i> Frontend Developer</div>
+                    <div class="info-item"><i class='bx bx-paint'></i> UI/UX & Graphic Design</div>
+                    <div class="info-item"><i class='bx bx-network-chart'></i> Network Technician</div>
+                    <div class="info-item"><i class='bx bx-microchip'></i> Electronics</div>
                 </div>
-                <div class="radial-bar">
-    
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-        
-                    </svg>
-                    <div class="percentage">70%</div>
-                    <div class="text">comunication</div>
-                </div>            
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-3" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">75%</div>
-                    <div class="text">problem solve</div>
-                </div>
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-4" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">85%</div>
-                    <div class="text">TeamWork</div>
-                </div>
+                <a href="#contact" class="btn-primary">Contact Me</a>
             </div>
         </div>
     </section>
 
-
-    
-        <div id="portfolio" id="project">
-            <div class="main-text" id="project">
-             <h2>Latest <span>Project</span></h2>
-
-            <div class="portfolio-content">
-                <div class="row">
-                    <img src="img/batik.png">
-                    <div class="layer">
-                        <h5>Web batik</h5>
-                        <p>
-                        <a href="https://adhitamaazar.github.io/batik/"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <img src="img/porto2.png">
-                    <div class="layer">
-                        <h5>Porto2</h5>
-                        <p></p>
-                        
-                        <a href="porto2.html"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <img src="img/Databuku.png">
-                    <div class="layer">
-                        <h5>Laravel projek</h5>
-                        <p>Sebuah tugas projek</p>
-                        
-                        <a href=""><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <img src="img/kaggle web.png">
-                    <div class="layer">
-                        <h5>kaggle web</h5>
-                        <p></p>
-                        
-                        <a href="http://103.186.167.18:8002/rpl2/laravel/kaggleAdhitama_2/"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <img src="https://img.freepik.com/premium-photo/business-cards-templates-flyers-customizable-designs-professional-branding_1191871-29336.jpg?semt=ais_hybrid">
-                    <div class="layer">
-                        <h5>UI/UX Design</h5>
-                        <p>Gambar ini adalah contoh proyek yang tren untuk saat ini, menggambarkan perpaduan antara teknologi modern dan estetika desain yang inovatif. dan fokus pada pengalaman pengguna yang lebih personal. menciptakan solusi yang tidak hanya fungsional tetapi juga menarik secara visual dan relevan dengan kebutuhan masa kini.</p>
-                        
-                        <a href="#contact"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
-                    </div>
-                </div>
-                
-               
-                
+    <!-- ===== SERVICES ===== -->
+    <section class="services" id="services">
+        <div class="section-header">
+            <span class="section-tag">What I Do</span>
+            <h2 class="section-title">My <span class="gradient-text">Services</span></h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"><i class='bx bx-code-alt'></i></div>
+                <h3>UI/UX Design</h3>
+                <p>Intuitive, aesthetic and functional user interfaces that help you achieve business goals.</p>
+                <ul class="service-features">
+                    <li><i class='bx bx-check'></i> Wireframing & Prototyping</li>
+                    <li><i class='bx bx-check'></i> User Research</li>
+                </ul>
+                <a href="#contact" class="service-link">Get in touch <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+            <div class="service-card featured">
+                <span class="featured-badge">Most Popular</span>
+                <div class="service-icon"><i class='bx bx-crop'></i></div>
+                <h3>Graphic Design</h3>
+                <p>Creative visuals that turn ideas into stunning masterpieces – strong and memorable identity.</p>
+                <ul class="service-features">
+                    <li><i class='bx bx-check'></i> Branding & Logo</li>
+                    <li><i class='bx bx-check'></i> Social Media Kit</li>
+                </ul>
+                <a href="#contact" class="service-link">Start project <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class='bx bxl-visual-studio'></i></div>
+                <h3>Frontend Dev</h3>
+                <p>Responsive, attractive interfaces built with HTML, CSS, JavaScript and modern frameworks.</p>
+                <ul class="service-features">
+                    <li><i class='bx bx-check'></i> React / Next.js</li>
+                    <li><i class='bx bx-check'></i> Performance Optimization</li>
+                </ul>
+                <a href="#contact" class="service-link">Hire me <i class='bx bx-right-arrow-alt'></i></a>
             </div>
         </div>
-    
+    </section>
 
+    <!-- ===== SKILLS ===== -->
+    <section class="skills-section" id="skills">
+        <div class="section-header">
+            <span class="section-tag">My Toolkit</span>
+            <h2 class="section-title">Tech <span class="gradient-text">Skills</span></h2>
+        </div>
+        <div class="skills-container">
+            <!-- Left: Progress Bars -->
+            <div>
+                <h3>Technical Skills</h3>
+                <div class="skill-bars">
+                    <div class="skill-bar">
+                        <div class="skill-info"><span class="skill-name"><i class='bx bxl-html5' style="color:#c95d2e"></i> HTML</span><span class="skill-percent">90%</span></div>
+                        <div class="skill-track"><div class="skill-fill" style="width:90%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info"><span class="skill-name"><i class='bx bxl-css3' style="color:#147bbc"></i> CSS</span><span class="skill-percent">85%</span></div>
+                        <div class="skill-track"><div class="skill-fill" style="width:85%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info"><span class="skill-name"><i class='bx bxl-javascript' style="color:#b0bc1e"></i> JavaScript</span><span class="skill-percent">75%</span></div>
+                        <div class="skill-track"><div class="skill-fill" style="width:75%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info"><span class="skill-name"><i class='bx bxl-python' style="color:#c322c9"></i> Python</span><span class="skill-percent">50%</span></div>
+                        <div class="skill-track"><div class="skill-fill" style="width:50%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info"><span class="skill-name"><i class='bx bxl-react' style="color:#69bcbc"></i> React</span><span class="skill-percent">75%</span></div>
+                        <div class="skill-track"><div class="skill-fill" style="width:75%"></div></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right: Radial Bars -->
+            <div>
+                <h3>Professional Skills</h3>
+                <div class="radial-grid">
+                    <div class="radial-item">
+                        <div class="radial-ring">
+                            <svg viewBox="0 0 120 120">
+                                <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+                                <circle class="ring-fill" cx="60" cy="60" r="52" style="stroke-dashoffset: calc(314 - (314 * 90) / 100)"></circle>
+                            </svg>
+                            <span class="radial-percent">90%</span>
+                        </div>
+                        <span>Creativity</span>
+                    </div>
+                    <div class="radial-item">
+                        <div class="radial-ring">
+                            <svg viewBox="0 0 120 120">
+                                <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+                                <circle class="ring-fill" cx="60" cy="60" r="52" style="stroke-dashoffset: calc(314 - (314 * 70) / 100)"></circle>
+                            </svg>
+                            <span class="radial-percent">70%</span>
+                        </div>
+                        <span>Communication</span>
+                    </div>
+                    <div class="radial-item">
+                        <div class="radial-ring">
+                            <svg viewBox="0 0 120 120">
+                                <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+                                <circle class="ring-fill" cx="60" cy="60" r="52" style="stroke-dashoffset: calc(314 - (314 * 75) / 100)"></circle>
+                            </svg>
+                            <span class="radial-percent">75%</span>
+                        </div>
+                        <span>Problem Solving</span>
+                    </div>
+                    <div class="radial-item">
+                        <div class="radial-ring">
+                            <svg viewBox="0 0 120 120">
+                                <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+                                <circle class="ring-fill" cx="60" cy="60" r="52" style="stroke-dashoffset: calc(314 - (314 * 85) / 100)"></circle>
+                            </svg>
+                            <span class="radial-percent">85%</span>
+                        </div>
+                        <span>Teamwork</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PORTFOLIO ===== -->
+    <section id="portfolio">
+        <div class="section-header">
+            <span class="section-tag">Recent Work</span>
+            <h2 class="section-title">Latest <span class="gradient-text">Projects</span></h2>
+        </div>
+        <div class="portfolio-grid">
+            <div class="portfolio-card">
+                <div class="portfolio-img">
+                    <img src="img/batik.png" alt="Web Batik">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-overlay-content">
+                            <span class="portfolio-tag">Web Development</span>
+                            <div class="portfolio-title">Batik Website</div>
+                            <div class="portfolio-desc">Cultural heritage promotion</div>
+                            <a href="https://adhitamaazar.github.io/batik/" target="_blank" class="btn-outline" style="margin-top:10px; padding:8px 16px; font-size:13px;">Visit <i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-img">
+                    <img src="img/porto2.png" alt="Portfolio 2">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-overlay-content">
+                            <span class="portfolio-tag">Frontend</span>
+                            <div class="portfolio-title">Portfolio v2</div>
+                            <div class="portfolio-desc">Modern personal website</div>
+                            <a href="porto2.html" class="btn-outline" style="margin-top:10px; padding:8px 16px; font-size:13px;">Open <i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-img">
+                    <img src="img/Databuku.png" alt="Laravel Project">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-overlay-content">
+                            <span class="portfolio-tag">Laravel</span>
+                            <div class="portfolio-title">Data Buku</div>
+                            <div class="portfolio-desc">Library management system</div>
+                            <a href="#" class="btn-outline" style="margin-top:10px; padding:8px 16px; font-size:13px;">Demo <i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-img">
+                    <img src="img/kaggle web.png" alt="Kaggle Web">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-overlay-content">
+                            <span class="portfolio-tag">Fullstack</span>
+                            <div class="portfolio-title">Kaggle Integration</div>
+                            <div class="portfolio-desc">Data science platform</div>
+                            <a href="http://103.186.167.18:8002/rpl2/laravel/kaggleAdhitama_2/" target="_blank" class="btn-outline" style="margin-top:10px; padding:8px 16px; font-size:13px;">Visit <i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-img">
+                    <img src="https://img.freepik.com/premium-photo/business-cards-templates-flyers-customizable-designs-professional-branding_1191871-29336.jpg" alt="UI/UX Design">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-overlay-content">
+                            <span class="portfolio-tag">UI/UX Design</span>
+                            <div class="portfolio-title">Trending Design</div>
+                            <div class="portfolio-desc">Modern visual solutions</div>
+                            <a href="#contact" class="btn-outline" style="margin-top:10px; padding:8px 16px; font-size:13px;">Inquire <i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
     <section class="contact" id="contact">
-        <div class="contact-text">
-            <h2>Contact <span>Me</span></h2>
-            <h4>Lets work together</h4>
-            <p>I'm glad you've visited my personal portfolio website! If you have any questions, suggestions, or would like to collaborate, please feel free to contact me through this form. I will endeavor to reply to your message as soon as possible.</p>
-            <ul class="contact-list">
-                <li><i class="bx bxs-send"></i> Adhitamzar@gmail.com</li>
-                <li><i class="bx bxs-phone"></i> 081515842845</li>
-            </ul>
-            <div class="contact-icons">
-                <a href="https://www.instagram.com/adhittttttp/"><i class="bx bxl-instagram"></i></a>
-                <a><i class="bx bxl-whatsapp"></i></a>
-                <a><i class="bx bxl-tiktok"></i></a>
-                <a href="https://www.linkedin.com/in/adhitama-azar-zein-458528352/"><i class="bx bxl-linkedin"></i></a>
+        <div class="section-header">
+            <span class="section-tag">Get In Touch</span>
+            <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+        </div>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h3>Let's Work Together</h3>
+                <p>I'm glad you visited my portfolio. If you have any questions, suggestions, or want to collaborate, feel free to reach out!</p>
+                <ul class="contact-list">
+                    <li><i class='bx bxs-send'></i> Adhitamzar@gmail.com</li>
+                    <li><i class='bx bxs-phone'></i> 081515842845</li>
+                </ul>
+                <div class="contact-icons">
+                    <a href="https://www.instagram.com/adhittttttp/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="#"><i class='bx bxl-tiktok'></i></a>
+                    <a href="https://www.linkedin.com/in/adhitama-azar-zein-458528352/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+            <div class="contact-form-wrapper">
+                <form action="#" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn-primary btn-full"><i class='bx bx-send'></i> Send Message</button>
+                </form>
             </div>
         </div>
-    
-        <div class="contact-form">
-            <form action="">
-                <input type="text" placeholder="Enter Your Name" required>
-                <input type="email" placeholder="Enter Your Email" required>
-                <input type="text" placeholder="Enter Your Subject">
-                <textarea placeholder="Enter Your Message" required></textarea>
-                <input type="submit" value="Submit" class="send">
-            </form>
-        </div>
     </section>
-    <div class="last-text">
-        <p>developed with Adhitama Azar</p>
-    </div>
-    <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
-    
-    
-    
-    
-        <script src="main.js"></script>
-    </body>
-    </html>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="#" class="footer-logo"><i class='bx bx-code-alt'></i> Portfolio</a>
+            <p>© 2025 Adhitama Azar. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <a href="#" class="back-to-top" id="backToTop"><i class='bx bx-up-arrow-alt'></i></a>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script>
+        // Typed.js
+        const typed = new Typed('.typed-text', {
+            strings: ['Frontend Developer', 'UI/UX Designer', 'Graphic Designer', 'Network Technician'],
+            typeSpeed: 80,
+            backSpeed: 50,
+            backDelay: 1500,
+            loop: true
+        });
+
+        // Hamburger Menu
+        const hamburger = document.getElementById('hamburger');
+        const navbar = document.getElementById('navbar');
+        hamburger.addEventListener('click', () => {
+            navbar.classList.toggle('open');
+            hamburger.classList.toggle('toggle');
+        });
+        // Close menu on link click
+        document.querySelectorAll('.navbar a').forEach(link => {
+            link.addEventListener('click', () => {
+                navbar.classList.remove('open');
+                hamburger.classList.remove('toggle');
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            header.classList.toggle('scrolled', window.scrollY > 50);
+            // Back to top button
+            const backToTop = document.getElementById('backToTop');
+            backToTop.classList.toggle('visible', window.scrollY > 600);
+        });
+
+        // Smooth scroll for anchor links (same page)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if(target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
