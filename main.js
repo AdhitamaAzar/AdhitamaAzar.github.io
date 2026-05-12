@@ -1,6 +1,6 @@
 // ===== TYPED.JS =====
 const typed = new Typed('.typed-text', {
-    strings: ['Frontend Developer', 'UI/UX Designer', 'Graphic Designer', 'Network Technician'],
+    strings: ['Backend Developer', 'UI/UX Designer', 'Game Developer', 'Network Technician'],
     typeSpeed: 80,
     backSpeed: 50,
     backDelay: 1500,
