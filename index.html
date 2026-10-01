@@ -1,480 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adhitama Azar Wicaksono Zein — Portfolio</title>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- Boxicons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
-    <!-- External CSS -->
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADHITAMA AZAR · PORTFOLIO</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-screen="home">
 
-    <!-- Subtle Background Particle Grid -->
-    <div class="bg-grid-ambient"></div>
+<!-- Background art layers -->
+<div id="bg" aria-hidden="true">
+  <div class="bg-layer" id="bg-stripes"></div>
+  <svg class="bg-star" style="left:6%;top:8%;width:26vmax;height:26vmax" viewBox="0 0 100 100">
+    <polygon points="50,0 60,35 98,35 68,57 78,94 50,72 22,94 32,57 2,35 40,35" fill="#000"/>
+  </svg>
+  <svg class="bg-star s2" style="right:4%;bottom:6%;width:34vmax;height:34vmax" viewBox="0 0 100 100">
+    <polygon points="50,0 60,35 98,35 68,57 78,94 50,72 22,94 32,57 2,35 40,35" fill="#fff"/>
+  </svg>
+  <img class="menu-art" id="art-home" src="assets/menus/home.jpg" alt=""
+       onload="document.body.classList.add('has-art-home')" onerror="this.remove()">
+  <img class="menu-art" id="art-projects" src="assets/menus/projects.jpg" alt=""
+       onload="document.body.classList.add('has-art-projects')" onerror="this.remove()">
+  <img class="menu-art" id="art-skills" src="assets/menus/skills.jpg" alt=""
+       onload="document.body.classList.add('has-art-skills')" onerror="this.remove()">
+  <img class="menu-art" id="art-about" src="assets/menus/about.jpg" alt=""
+       onload="document.body.classList.add('has-art-about')" onerror="this.remove()">
+  <img class="menu-art" id="art-contact" src="assets/menus/contact.jpg" alt=""
+       onload="document.body.classList.add('has-art-contact')" onerror="this.remove()">
+  <div class="bg-layer" id="bg-halftone"></div>
+  <div class="bg-layer" id="bg-vignette"></div>
+</div>
+<div id="slash" aria-hidden="true"></div>
 
-    <!-- Navigation Header -->
-    <header class="header" id="header">
-        <a href="#home" class="logo">
-            <i class='bx bx-code-alt'></i> Adhitama<span class="dot">.</span>
-        </a>
+<!-- Hero art: profile photo -->
+<img id="hero-art" src="assets/me.jpg" alt="" onerror="this.remove()">
 
-        <nav class="navbar" id="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+<!-- Screen transition wipe -->
+<div id="wipe" aria-hidden="true">
+  <div class="pane p3"></div>
+  <div class="pane p2"></div>
+  <div class="pane p1"></div>
+  <div class="flash"></div>
+</div>
 
-        <div class="header-right">
-            <a href="#contact" class="btn-nav">Let's Talk</a>
-            <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </header>
+<!-- Custom animated cursor + select sound -->
+<div id="cursor" aria-hidden="true"></div>
+<audio id="sfx-select" src="assets/sfx/select.mp3" preload="auto"></audio>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="hero-greeting">
-                <span>👋 Hello, It's Me</span>
-            </div>
+<div id="shell">
+  <div id="hud-top">
+    <div class="hud-tag">Portfolio // Adhitama Azar</div>
+    <div class="hud-tag alt">Batu, Malang · Backend & Game Dev</div>
+  </div>
 
-            <h1 class="hero-title">
-                Adhitama <span class="gradient-text">Azar Wicaksono Zein</span>
-            </h1>
+  <div id="stage">
 
-            <h2 class="hero-subtitle">
-                And I'm a <span class="typed-text" id="typedText">Backend Developer</span><span class="typed-cursor">|</span>
-            </h2>
-
-            <p class="hero-desc">
-                I build scalable backend systems, craft interactive game experiences, and design clean, intuitive user interfaces. Passionate about REST APIs, database architecture, and performance.
-            </p>
-
-            <div class="hero-actions">
-                <a href="#contact" class="btn-primary">
-                    <i class='bx bx-send'></i> Let's Talk
-                </a>
-                <a href="#projects" class="btn-secondary">
-                    <i class='bx bx-folder'></i> View Projects
-                </a>
-            </div>
-
-            <div class="hero-socials">
-                <a href="https://www.instagram.com/adhittttttp/" target="_blank" title="Instagram" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
-                <a href="https://wa.me/6281515842845" target="_blank" title="WhatsApp" aria-label="WhatsApp"><i class='bx bxl-whatsapp'></i></a>
-                <a href="https://www.linkedin.com/in/adhitama-azar-zein-458528352/" target="_blank" title="LinkedIn" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
-                <a href="mailto:Adhitamzar@gmail.com" title="Email" aria-label="Email"><i class='bx bx-envelope'></i></a>
-            </div>
-        </div>
-
-        <!-- 3D Interactive Photo Card (No tacky boxes overlapping) -->
-        <div class="hero-visual">
-            <div class="photo-card-3d" id="heroPhotoCard" data-tilt="true">
-                <div class="photo-card-glow"></div>
-                <div class="photo-card-inner">
-                    <img src="img/foto profile.jpg" alt="Adhitama Azar Wicaksono Zein">
-                    <div class="photo-info-bar">
-                        <span class="status-indicator"></span>
-                        <span>Available for Projects</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- HOME -->
+    <section class="screen active" id="screen-home" aria-label="Main menu">
+      <div id="intro-eyebrow">Take a look at my work</div>
+      <h1 id="big-name">
+        <span class="ransom" data-ransom="ADHITAMA"></span>
+        <span class="ransom" data-ransom="AZAR"></span>
+      </h1>
+      <p id="tagline">
+        Backend Developer, Game Developer, and UI/UX Designer based in Batu, Malang. I build web applications with Laravel, REST APIs, and MySQL, and create game mechanics with modern tooling. Clean code, real projects, no fluff.
+      </p>
+      <nav id="menu" aria-label="Sections">
+        <button class="menu-item sel" data-target="projects">
+          <span class="ransom" data-ransom="PROJECTS"></span><span class="cursor-mark">◀</span>
+        </button>
+        <button class="menu-item" data-target="skills">
+          <span class="ransom" data-ransom="SKILLS"></span><span class="cursor-mark">◀</span>
+        </button>
+        <button class="menu-item" data-target="about">
+          <span class="ransom" data-ransom="ABOUT"></span><span class="cursor-mark">◀</span>
+        </button>
+        <button class="menu-item" data-target="contact">
+          <span class="ransom" data-ransom="CONTACT"></span><span class="cursor-mark">◀</span>
+        </button>
+      </nav>
     </section>
 
-    <!-- About Section -->
-    <section class="about-section" id="about">
-        <div class="section-heading">
-            <span class="badge-tag">About Me</span>
-            <h2 class="section-title">Code, Games &amp; <span class="gradient-text">Design</span></h2>
-        </div>
-
-        <div class="about-grid">
-            <div class="about-card" data-tilt="true">
-                <h3>Behind The Code</h3>
-                <p>
-                    I am a 17-year-old Software Engineering student with a strong passion for backend architecture, game mechanics, and UI/UX design.
-                </p>
-                <p>
-                    I focus on building secure REST APIs, clean database systems, and robust game logic. Turning complex requirements into reliable, responsive digital applications is what drives my work every day.
-                </p>
-
-                <div class="about-tags">
-                    <span class="tag-chip"><i class='bx bx-server'></i> Backend Development</span>
-                    <span class="tag-chip"><i class='bx bx-joystick'></i> Game Mechanics</span>
-                    <span class="tag-chip"><i class='bx bx-palette'></i> UI/UX Design</span>
-                    <span class="tag-chip"><i class='bx bx-data'></i> Database Architecture</span>
-                </div>
-            </div>
-
-            <div class="about-stats-card" data-tilt="true">
-                <div class="stat-box">
-                    <span class="stat-number gradient-text">2+</span>
-                    <span class="stat-label">Years Coding</span>
-                </div>
-                <div class="stat-box">
-                    <span class="stat-number gradient-text">10+</span>
-                    <span class="stat-label">Projects Built</span>
-                </div>
-                <div class="stat-box">
-                    <span class="stat-number gradient-text">17</span>
-                    <span class="stat-label">Years Young</span>
-                </div>
-            </div>
-        </div>
+    <!-- PROJECTS -->
+    <section class="screen sub" id="screen-projects" aria-label="Projects">
+      <div class="screen-head"><span class="ransom" data-ransom="PROJECTS"></span></div>
+      <button class="back-hint" data-back>ESC · Back</button>
+      <div class="grid-label"><span class="bar"></span>My Work</div>
+      <div id="feat-grid" class="grid"></div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services-section" id="services">
-        <div class="section-heading">
-            <span class="badge-tag">What I Do</span>
-            <h2 class="section-title">My <span class="gradient-text">Services</span></h2>
-        </div>
-
-        <div class="services-grid">
-            <div class="service-card" data-tilt="true">
-                <div class="service-icon"><i class='bx bx-server'></i></div>
-                <h3>Backend Development</h3>
-                <p>Secure and scalable server systems with structured REST APIs, authentication guards, and optimized database transactions.</p>
-                <ul class="service-features">
-                    <li><i class='bx bx-check'></i> REST API Development</li>
-                    <li><i class='bx bx-check'></i> Login &amp; Token Authentication</li>
-                    <li><i class='bx bx-check'></i> MySQL &amp; Database Design</li>
-                </ul>
-                <a href="#contact" class="service-link">Get in touch <i class='bx bx-right-arrow-alt'></i></a>
-            </div>
-
-            <div class="service-card featured" data-tilt="true">
-                <div class="featured-badge">Passion</div>
-                <div class="service-icon"><i class='bx bx-joystick'></i></div>
-                <h3>Game Development</h3>
-                <p>Creating interactive gameplay systems, collision math, scoring mechanics, wave algorithms, and player experiences.</p>
-                <ul class="service-features">
-                    <li><i class='bx bx-check'></i> Game Logic &amp; Loops</li>
-                    <li><i class='bx bx-check'></i> Scoring &amp; Level Systems</li>
-                    <li><i class='bx bx-check'></i> Interactive Mechanics</li>
-                </ul>
-                <a href="#contact" class="service-link">Start project <i class='bx bx-right-arrow-alt'></i></a>
-            </div>
-
-            <div class="service-card" data-tilt="true">
-                <div class="service-icon"><i class='bx bx-palette'></i></div>
-                <h3>UI/UX Design</h3>
-                <p>Designing modern, responsive interfaces focused on visual aesthetics, clean usability, and intuitive navigation.</p>
-                <ul class="service-features">
-                    <li><i class='bx bx-check'></i> UI Design &amp; Wireframing</li>
-                    <li><i class='bx bx-check'></i> Responsive Layouts</li>
-                    <li><i class='bx bx-check'></i> Clean User Flow</li>
-                </ul>
-                <a href="#contact" class="service-link">Hire me <i class='bx bx-right-arrow-alt'></i></a>
-            </div>
-        </div>
+    <!-- SKILLS -->
+    <section class="screen sub" id="screen-skills" aria-label="Skills">
+      <div class="screen-head"><span class="ransom" data-ransom="SKILLS"></span></div>
+      <button class="back-hint" data-back>ESC · Back</button>
+      <div id="skills-body"></div>
     </section>
 
-    <!-- Skills Section (Requested Randomized Values 26%-49%) -->
-    <section class="skills-section" id="skills">
-        <div class="section-heading">
-            <span class="badge-tag">My Toolkit</span>
-            <h2 class="section-title">Tech <span class="gradient-text">Skills</span></h2>
-        </div>
-
-        <div class="skills-container">
-            <!-- Technical Progress Bars -->
-            <div class="skills-box" data-tilt="true">
-                <h3 class="skills-box-title"><i class='bx bx-code-block'></i> Technical Capabilities</h3>
-
-                <div class="skill-bars-list">
-                    <div class="skill-bar-item">
-                        <div class="skill-meta">
-                            <span><i class='bx bxl-php' style="color:#777bb4"></i> PHP &amp; Native</span>
-                            <span class="skill-val">46%</span>
-                        </div>
-                        <div class="skill-track">
-                            <div class="skill-fill" data-progress="46" style="width: 46%;"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-bar-item">
-                        <div class="skill-meta">
-                            <span><i class='bx bx-code-curly' style="color:#ff2d20"></i> Laravel Framework</span>
-                            <span class="skill-val">38%</span>
-                        </div>
-                        <div class="skill-track">
-                            <div class="skill-fill" data-progress="38" style="width: 38%;"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-bar-item">
-                        <div class="skill-meta">
-                            <span><i class='bx bx-data' style="color:#00758f"></i> MySQL &amp; Database</span>
-                            <span class="skill-val">47%</span>
-                        </div>
-                        <div class="skill-track">
-                            <div class="skill-fill" data-progress="47" style="width: 47%;"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-bar-item">
-                        <div class="skill-meta">
-                            <span><i class='bx bx-network-chart' style="color:#00c896"></i> REST API</span>
-                            <span class="skill-val">41%</span>
-                        </div>
-                        <div class="skill-track">
-                            <div class="skill-fill" data-progress="41" style="width: 41%;"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-bar-item">
-                        <div class="skill-meta">
-                            <span><i class='bx bxl-javascript' style="color:#f7df1e"></i> JavaScript</span>
-                            <span class="skill-val">33%</span>
-                        </div>
-                        <div class="skill-track">
-                            <div class="skill-fill" data-progress="33" style="width: 33%;"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-bar-item">
-                        <div class="skill-meta">
-                            <span><i class='bx bxl-python' style="color:#3776ab"></i> Python</span>
-                            <span class="skill-val">36%</span>
-                        </div>
-                        <div class="skill-track">
-                            <div class="skill-fill" data-progress="36" style="width: 36%;"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-bar-item">
-                        <div class="skill-meta">
-                            <span><i class='bx bx-joystick' style="color:#ff6b6b"></i> Game Logic</span>
-                            <span class="skill-val">44%</span>
-                        </div>
-                        <div class="skill-track">
-                            <div class="skill-fill" data-progress="44" style="width: 44%;"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-bar-item">
-                        <div class="skill-meta">
-                            <span><i class='bx bx-palette' style="color:#a78bfa"></i> UI/UX Design</span>
-                            <span class="skill-val">48%</span>
-                        </div>
-                        <div class="skill-track">
-                            <div class="skill-fill" data-progress="48" style="width: 48%;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Professional Skills -->
-            <div class="skills-box" data-tilt="true">
-                <h3 class="skills-box-title"><i class='bx bx-bulb'></i> Professional Workflow</h3>
-
-                <div class="radial-skills-grid">
-                    <div class="radial-card">
-                        <div class="radial-ring-box">
-                            <svg viewBox="0 0 100 100">
-                                <circle class="ring-bg" cx="50" cy="50" r="40"></circle>
-                                <circle class="ring-fill" cx="50" cy="50" r="40" style="stroke-dashoffset: calc(251.2 - (251.2 * 85) / 100);"></circle>
-                            </svg>
-                            <span class="ring-label">85%</span>
-                        </div>
-                        <span class="radial-title">Problem Solving</span>
-                    </div>
-
-                    <div class="radial-card">
-                        <div class="radial-ring-box">
-                            <svg viewBox="0 0 100 100">
-                                <circle class="ring-bg" cx="50" cy="50" r="40"></circle>
-                                <circle class="ring-fill" cx="50" cy="50" r="40" style="stroke-dashoffset: calc(251.2 - (251.2 * 80) / 100);"></circle>
-                            </svg>
-                            <span class="ring-label">80%</span>
-                        </div>
-                        <span class="radial-title">Logic Thinking</span>
-                    </div>
-
-                    <div class="radial-card">
-                        <div class="radial-ring-box">
-                            <svg viewBox="0 0 100 100">
-                                <circle class="ring-bg" cx="50" cy="50" r="40"></circle>
-                                <circle class="ring-fill" cx="50" cy="50" r="40" style="stroke-dashoffset: calc(251.2 - (251.2 * 75) / 100);"></circle>
-                            </svg>
-                            <span class="ring-label">75%</span>
-                        </div>
-                        <span class="radial-title">Teamwork</span>
-                    </div>
-
-                    <div class="radial-card">
-                        <div class="radial-ring-box">
-                            <svg viewBox="0 0 100 100">
-                                <circle class="ring-bg" cx="50" cy="50" r="40"></circle>
-                                <circle class="ring-fill" cx="50" cy="50" r="40" style="stroke-dashoffset: calc(251.2 - (251.2 * 88) / 100);"></circle>
-                            </svg>
-                            <span class="ring-label">88%</span>
-                        </div>
-                        <span class="radial-title">Creativity</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- ABOUT -->
+    <section class="screen sub align-right" id="screen-about" aria-label="About">
+      <div class="screen-head"><span class="ransom" data-ransom="ABOUT"></span></div>
+      <button class="back-hint" data-back>ESC · Back</button>
+      <div class="paper">
+        <figure class="about-photo">
+          <img src="assets/me.jpg" alt="Adhitama Azar Wicaksono Zein" onerror="this.parentElement.remove()">
+          <figcaption>Adhitama · Batu, Malang</figcaption>
+        </figure>
+        <p class="quote"><em>"Code is like humor. When you have to explain it, it is bad."</em>
+        — Cory House</p>
+        <br>
+        <p>Saya <strong>Adhitama Azar Wicaksono Zein</strong>, seorang developer yang fokus di
+        <span class="stamp">Backend Development</span> dan <span class="stamp">Game Development</span>.
+        Saya membangun aplikasi web menggunakan PHP Native, Laravel, dan MySQL, serta mengembangkan
+        mekanisme game dengan JavaScript dan Python. Dari sistem manajemen perpustakaan hingga REST API
+        integration, saya mengutamakan clean code dan solusi yang bekerja.</p>
+        <br>
+        <p>Di luar coding, saya tertarik dengan desain UI/UX dan selalu mencari cara untuk membuat
+        interface yang intuitif dan menyenangkan untuk digunakan. Setiap proyek yang saya kerjakan
+        adalah kesempatan untuk belajar dan berkembang sebagai developer.</p>
+      </div>
     </section>
 
-    <!-- Projects Section (Exact 5 Original Projects Preserved) -->
-    <section class="projects-section" id="projects">
-        <div class="section-heading">
-            <span class="badge-tag">Recent Work</span>
-            <h2 class="section-title">Latest <span class="gradient-text">Projects</span></h2>
+    <!-- CONTACT -->
+    <section class="screen sub align-right" id="screen-contact" aria-label="Contact">
+      <div class="screen-head"><span class="ransom" data-ransom="CONTACT"></span></div>
+      <button class="back-hint" data-back>ESC · Back</button>
+      <div class="paper" style="max-width:620px">
+        <p>Tertarik untuk <strong>berkolaborasi</strong> atau punya project yang menarik?
+        Hubungi saya melalui channel di bawah ini:</p>
+      </div>
+      <div class="contact-list">
+        <a class="contact-chip" href="mailto:Adhitamzar@gmail.com"><span>Email ✉</span></a>
+        <a class="contact-chip" href="https://wa.me/6281515842845" target="_blank" rel="noopener"><span>WhatsApp ↗</span></a>
+        <a class="contact-chip" href="https://www.linkedin.com/in/adhitama-azar-zein-458528352/" target="_blank" rel="noopener"><span>LinkedIn ↗</span></a>
+        <a class="contact-chip" href="https://www.instagram.com/adhittttttp/" target="_blank" rel="noopener"><span>Instagram ↗</span></a>
+      </div>
+
+      <form id="contact-form" class="paper" style="max-width:620px" novalidate>
+        <div class="form-head">Kirim Pesan</div>
+        <label class="field">
+          <span>Nama</span>
+          <input type="text" name="name" required maxlength="100" autocomplete="name">
+        </label>
+        <label class="field">
+          <span>Email</span>
+          <input type="email" name="email" required maxlength="150" autocomplete="email">
+        </label>
+        <label class="field">
+          <span>Pesan</span>
+          <textarea name="message" required rows="5" maxlength="3000"></textarea>
+        </label>
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off"
+               style="position:absolute;left:-5000px" aria-hidden="true">
+        <div class="form-foot">
+          <button type="submit" class="cv-btn form-send"><span>Kirim ➤</span></button>
+          <div id="form-status" role="status"></div>
         </div>
-
-        <div class="projects-grid">
-            <!-- Project 1: Library Management System -->
-            <div class="project-card" data-tilt="true">
-                <div class="project-img-box">
-                    <img src="img/Databuku.png" alt="Library Management System">
-                    <div class="project-tag-pill">Laravel Backend</div>
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title">Library Management System</h3>
-                    <p class="project-desc">Backend system for managing book data, users, and database records.</p>
-                    <a href="#" class="btn-card-action">Demo <i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <!-- Project 2: API Integration Project -->
-            <div class="project-card" data-tilt="true">
-                <div class="project-img-box">
-                    <img src="img/kaggle web.png" alt="API Integration Project">
-                    <div class="project-tag-pill">REST API</div>
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title">API Integration Project</h3>
-                    <p class="project-desc">Backend API integration with data processing and server-side logic.</p>
-                    <a href="http://103.186.167.18:8002/rpl2/laravel/kaggleAdhitama_2/" target="_blank" class="btn-card-action">Visit <i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <!-- Project 3: Batik Website -->
-            <div class="project-card" data-tilt="true">
-                <div class="project-img-box">
-                    <img src="img/batik.png" alt="Batik Website">
-                    <div class="project-tag-pill">Web Development</div>
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title">Batik Website</h3>
-                    <p class="project-desc">A cultural website project with structured content and clean interface.</p>
-                    <a href="https://adhitamaazar.github.io/batik/" target="_blank" class="btn-card-action">Visit <i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <!-- Project 4: Web topup -->
-            <div class="project-card" data-tilt="true">
-                <div class="project-img-box">
-                    <img src="img/game-project.png" alt="Web topup">
-                    <div class="project-tag-pill">Web topup</div>
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title">Web topup</h3>
-                    <p class="project-desc">A topup website project with buy game voucher and others.</p>
-                    <a href="https://nexus-topup-tan.vercel.app/" target="_blank" class="btn-card-action">Details <i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <!-- Project 5: Developer Portfolio -->
-            <div class="project-card" data-tilt="true">
-                <div class="project-img-box">
-                    <img src="img/porto2.png" alt="Developer Portfolio">
-                    <div class="project-tag-pill">Personal Website</div>
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title">Developer Portfolio</h3>
-                    <p class="project-desc">Modern personal portfolio for showcasing backend and game projects.</p>
-                    <a href="porto2.html" target="_blank" class="btn-card-action">Open <i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-        </div>
+      </form>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact-section" id="contact">
-        <div class="section-heading">
-            <span class="badge-tag">Get In Touch</span>
-            <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
-        </div>
+  </div>
 
-        <div class="contact-container">
-            <div class="contact-info-card" data-tilt="true">
-                <h3>Let's Build Something</h3>
-                <p>If you need a backend system, REST API, a game project, or a clean UI — feel free to reach out anytime!</p>
+  <div id="hud-bottom">
+    <span><span class="key">↑↓</span>Select</span>
+    <span><span class="key">Enter</span>Confirm</span>
+    <span><span class="key">Esc</span>Back</span>
+    <span style="margin-left:auto;opacity:.8" id="clock"></span>
+  </div>
+</div>
 
-                <div class="contact-items-list">
-                    <a href="mailto:Adhitamzar@gmail.com" class="contact-item">
-                        <i class='bx bx-envelope'></i>
-                        <span>Adhitamzar@gmail.com</span>
-                    </a>
-                    <a href="https://wa.me/6281515842845" target="_blank" class="contact-item">
-                        <i class='bx bxl-whatsapp'></i>
-                        <span>081515842845</span>
-                    </a>
-                </div>
-
-                <div class="contact-social-icons">
-                    <a href="https://www.instagram.com/adhittttttp/" target="_blank" title="Instagram"><i class='bx bxl-instagram'></i></a>
-                    <a href="https://wa.me/6281515842845" target="_blank" title="WhatsApp"><i class='bx bxl-whatsapp'></i></a>
-                    <a href="https://www.linkedin.com/in/adhitama-azar-zein-458528352/" target="_blank" title="LinkedIn"><i class='bx bxl-linkedin'></i></a>
-                </div>
-            </div>
-
-            <div class="contact-form-card" data-tilt="true">
-                <form action="mailto:Adhitamzar@gmail.com" method="POST" enctype="text/plain">
-                    <div class="form-group">
-                        <label for="formName">Your Name</label>
-                        <input type="text" id="formName" name="name" placeholder="John Doe" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="formEmail">Your Email</label>
-                        <input type="email" id="formEmail" name="email" placeholder="john@example.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="formMessage">Message</label>
-                        <textarea id="formMessage" name="message" placeholder="How can I help you?" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
-                        <i class='bx bx-send'></i> Send Message
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-inner">
-            <p>© 2026 Adhitama Azar Wicaksono Zein. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- External JavaScript -->
-    <script src="main.js"></script>
+<script src="js/model.js" defer></script>
+<script src="js/view.js" defer></script>
+<script src="js/controller.js" defer></script>
 </body>
 </html>
